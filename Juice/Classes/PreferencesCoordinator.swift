@@ -10,7 +10,7 @@ import AppKit
 
 final class PreferencesCoordinator: PreferencesWindowControllerDelegate {
     
-    private let windowController = PreferencesWindowController(windowNibName: "PreferencesWindowController")
+    private let windowController = PreferencesWindowController()
     
     func start() {
         windowController.delegate = self
@@ -20,22 +20,19 @@ final class PreferencesCoordinator: PreferencesWindowControllerDelegate {
     //MARK: - PreferencesWindowControllerDelegate
     
     func preferences(windowController: PreferencesWindowController, clickedPreference identifier: String) {
-        NSAnimationContext.runAnimationGroup({ (context) in
-            context.duration = 0.3
-            switch identifier {
-            case PreferencesWindowController.Identifiers.General:
-                windowController.contentViewController = GeneralPreferencesViewController()
-                windowController.window?.title = "General"
-            case PreferencesWindowController.Identifiers.Credits:
-                windowController.contentViewController = nil
-                windowController.window?.title = "Credits"
-            case PreferencesWindowController.Identifiers.Tip:
-                windowController.contentViewController = nil
-                windowController.window?.title = "Tip"
-            default:
-                break
-            }
-        }, completionHandler: nil)
-
+        switch identifier {
+            
+        case PreferencesWindowController.Identifiers.General:
+            windowController.contentViewController = GeneralPreferencesViewController()
+            windowController.window?.title = "General"
+        case PreferencesWindowController.Identifiers.Credits:
+            windowController.contentViewController = CreditsPreferencesViewController()
+            windowController.window?.title = "Credits"
+        case PreferencesWindowController.Identifiers.Tip:
+            windowController.contentViewController = nil
+            windowController.window?.title = "Tip"
+        default:
+            break
+        }
     }
 }

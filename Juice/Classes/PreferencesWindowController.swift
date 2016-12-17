@@ -24,6 +24,10 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
     
     weak var delegate: PreferencesWindowControllerDelegate?
     
+    override var windowNibName: String? {
+        return "PreferencesWindowController"
+    }
+    
     override func windowDidLoad() {
         super.windowDidLoad()
         window?.level = Int(CGWindowLevelForKey(.floatingWindow))
