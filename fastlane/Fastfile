@@ -1,8 +1,8 @@
 BUILD_NUMBER = Time.now.strftime('%Y.%m.%d%H%M%S').freeze
 
 before_all do
-  UI.important "Attempting to delete build folder..."
-  reset_git_repo
+  UI.important "Attempting to clearn build artifacts..."
+  `rm -rf ../build`
 end
 
 lane :beta do |options|
