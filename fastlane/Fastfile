@@ -1,0 +1,14 @@
+BUILD_NUMBER = Time.now.strftime('%Y.%m.%d%H%M%S').freeze
+
+lane :beta do
+  increment_build_number(build_number: BUILD_NUMBER)
+
+  gym(
+    workspace: 'Juice.xcworkspace',
+    scheme: 'Juice',
+    export_method: 'developer-id',
+    include_bitcode: false,
+    output_directory: './build/beta',
+    output_name: "Juice-Beta-#{BUILD_NUMBER}"
+  )
+end
