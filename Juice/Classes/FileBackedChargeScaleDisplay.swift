@@ -14,6 +14,10 @@ struct FileBackedChargeScaleDisplay: ChargeScaleDisplay, SerializableChargeScale
     let defaultDetentString: String
     let fileName: String
     
+    var filePath: URL? {
+        return FileManager.default.applicationSupportDirectory?.appendingPathComponent(fileName)
+    }
+    
     init(title: String, detents: [Int: String], defaultDetentString: String, fileName: String) {
         self.title = title
         self.detents = detents

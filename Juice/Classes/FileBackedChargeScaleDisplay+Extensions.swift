@@ -108,4 +108,22 @@ extension FileBackedChargeScaleDisplay {
                                             defaultDetentString: "┅┅┅┅┅┅┅┅┅┅┅",
                                             fileName: "dotted-line")
     }
+    
+    static func makeNewScaleTemplateScale(id: String) -> FileBackedChargeScaleDisplay {
+        let detents = [0: "Edit Me, I'll be triggered from 0 to 10%",
+                       1: "Edit Me, I'll be triggered from 10 to 20%",
+                       2: "Edit Me, I'll be triggered from 20 to 30%",
+                       3: "Edit Me, I'll be triggered from 30 to 40%",
+                       4: "Edit Me, I'll be triggered from 40 to 50%",
+                       5: "Edit Me, I'll be triggered from 50 to 60%",
+                       6: "Edit Me, I'll be triggered from 60 to 70%",
+                       7: "Edit Me, I'll be triggered from 70 to 80%",
+                       8: "Edit Me, I'll be triggered from 80 to 90%",
+                       9: "Edit Me, I'll be triggered from 90 to 100%"]
+        
+        return FileBackedChargeScaleDisplay(title: "Edit The Title",
+                                            detents: detents,
+                                            defaultDetentString: "Edit The Default Value To Show",
+                                            fileName: id)
+    }
 }

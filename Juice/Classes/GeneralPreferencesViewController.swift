@@ -54,11 +54,21 @@ class GeneralPreferencesViewController: NSViewController {
         statusBarStylePopUp.removeAllItems()
         scales.forEach({ statusBarStylePopUp.addItem(withTitle: $0.title) })
         
+        statusBarStylePopUp.selectItem(withTitle: preferences.chargeDisplayScale.value.title)
+        
         scalesFoundLabel.stringValue = "\(scales.count) Scales Found"
     }
     
     @IBAction func addNewScale(_ sender: Any) {
-        // something
+        let identifier = UUID().uuidString
+        let newScale = FileBackedChargeScaleDisplay.makeNewScaleTemplateScale(id: identifier)
+        guard let filePath = newScale.filePath else {
+            return
+        }
+        
+        newScale.save()
+        
+        NSWorkspace.shared().open(filePath)
     }
     
     @IBAction func triggerRescan(_ sender: Any) {

@@ -21,6 +21,7 @@ final class PreferencesStorage {
     init() {
         scanQueue.name = "com.bsm.macos.storage.scan"
         chargeDisplayScale = Variable(FileBackedChargeScaleDisplay.makeEmojiScale())
+        scanApplicationSupportForFiles()
     }
     
     func set(chargeDisplayScale: ChargeScaleDisplay) {
