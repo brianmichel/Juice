@@ -12,7 +12,9 @@ extension FileBackedChargeScaleDisplay {
     static func makeApplicationDefaults() -> [FileBackedChargeScaleDisplay] {
         return [
             makeEmojiScale(),
-            makeWeirdStringScale()
+            makeWeirdStringScale(),
+            makeASCIIScale(),
+            makeRomanNumeralScale()
         ]
     }
     
@@ -50,5 +52,41 @@ extension FileBackedChargeScaleDisplay {
                                             detents: detents,
                                             defaultDetentString: "uhh...",
                                             fileName: "weird-text-clean")
+    }
+    
+    static func makeASCIIScale() -> FileBackedChargeScaleDisplay {
+        let detents = [1: "├┃         ┤",
+                       2: "├┃┃        ┤",
+                       3: "├┃┃┃       ┤",
+                       4: "├┃┃┃┃      ┤",
+                       5: "├┃┃┃┃┃     ┤",
+                       6: "├┃┃┃┃┃┃    ┤",
+                       7: "├┃┃┃┃┃┃┃   ┤",
+                       8: "├┃┃┃┃┃┃┃┃  ┤",
+                       9: "├┃┃┃┃┃┃┃┃┃ ┤",
+                       10:"├┃┃┃┃┃┃┃┃┃┃┤"]
+        
+        return FileBackedChargeScaleDisplay(title: "ASCII Battery",
+                                            detents: detents,
+                                            defaultDetentString: "├    ??   ┤",
+                                            fileName: "ascii-battery")
+    }
+    
+    static func makeRomanNumeralScale() -> FileBackedChargeScaleDisplay {
+        let detents = [1: "Ⅰ",
+                       2: "Ⅱ",
+                       3: "Ⅲ",
+                       4: "Ⅳ",
+                       5: "Ⅴ",
+                       6: "Ⅵ",
+                       7: "Ⅶ",
+                       8: "Ⅷ",
+                       9: "Ⅸ",
+                       10: "Ⅹ"]
+        
+        return FileBackedChargeScaleDisplay(title: "Roman Numerals",
+                                            detents: detents,
+                                            defaultDetentString: "et tu?",
+                                            fileName: "roman-numerals")
     }
 }
