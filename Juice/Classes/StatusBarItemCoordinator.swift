@@ -16,7 +16,10 @@ final class StatusBarItemCoordinator: StatusMenuItemDelegate {
     private let statusBarItemMenu = StatusMenuItem(title: "Juice")
     private let disposableBag = DisposeBag()
     private let powerSourcesObservable: Observable<[PowerSource]>
-    private let powerSourceDisplayTransformer = PowerSourceDisplayTransformer()
+    private let scaleChangeObservable: Observable<ChargeScaleDisplay>
+    private let preferencesStorage = PreferencesStorage.shared
+    
+    private var lastPowerSource: PowerSource?
     
     init() {
         powerSourcesObservable = Observable.create({ (observer) -> Disposable in
@@ -33,6 +36,10 @@ final class StatusBarItemCoordinator: StatusMenuItemDelegate {
             return disposable
         })
         
+        scaleChangeObservable = preferencesStorage
+            .chargeDisplayScale
+            .asObservable()
+        
         statusBarItem.menu = statusBarItemMenu
         statusBarItemMenu.statusMenuItemDelegate = self
     }
@@ -45,10 +52,24 @@ final class StatusBarItemCoordinator: StatusMenuItemDelegate {
             
             self.updateLabel(source: source)
         }).addDisposableTo(disposableBag)
+        
+        scaleChangeObservable.subscribe(onNext: { (scale) in
+            self.updateLabel(scale: scale)
+        }).addDisposableTo(disposableBag)
     }
     
     private func updateLabel(source: PowerSource) {
-        statusBarItem.button?.title = powerSourceDisplayTransformer.display(for: source)
+        statusBarItem.button?.title = preferencesStorage.chargeDisplayScale.value.displayString(for: source.chargedDetent)
+        statusBarItemMenu.update(from: source)
+        lastPowerSource = source
+    }
+    
+    private func updateLabel(scale: ChargeScaleDisplay) {
+        guard let source = lastPowerSource else {
+            return
+        }
+        
+        statusBarItem.button?.title = scale.displayString(for: source.chargedDetent)
         statusBarItemMenu.update(from: source)
     }
     

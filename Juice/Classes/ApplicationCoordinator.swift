@@ -14,5 +14,24 @@ final class ApplicationCoordinator: NSObject {
     override init() {
         super.init()
         statusBarItemCoordinator.start()
+        
+        let detents = [
+            1: "huh one",
+            2: "lol two",
+            3: "huh three",
+            4: "sdf four",
+            5: "sfijsoidfj",
+            6: "sixsixsix",
+            7: "sevennn",
+            8: "eighthttt",
+            9: "ninnininine",
+            10: "full house"
+        ]
+        let scale = FileBackedChargeScaleDisplay(title: "Test Emoji Faces",
+                                                 detents: detents,
+                                                 defaultDetentString: "who knows",
+                                                 fileName: "test-emoji")
+        
+        scale.save()
     }
 }
