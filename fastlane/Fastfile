@@ -2,7 +2,7 @@ BUILD_NUMBER = Time.now.strftime('%Y.%m.%d%H%M%S').freeze
 
 before_all do
   UI.important "Attempting to delete build folder..."
-  `rm -rf ./build`
+  reset_git_repo
 end
 
 lane :beta do |options|
