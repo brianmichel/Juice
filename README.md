@@ -1,5 +1,5 @@
 ![](/images/icon-readme.png)
-# Juice
+# Juice ⚡️
 Make your battery information a bit more interesting by making your own measurement scale instead of a boring battery indicator.
 
 I was browsing Tumblr one day and saw Cyle make a post about this:
@@ -67,3 +67,7 @@ The format currently used to load custom scales is a simple `plist` file, let's 
 **NOTE:** The name of the plist file you save should be unique, by default UUID's are generated as the name of files if you create a scale through the UI.
 
 If you'd like to drop your own plist to be used by the application, new files can be dropped into the `~/Library/Containers/com.bsm.macos.Juice/Data/Library/Application Support/Juice` folder.
+
+## ✌️
+
+Feel free to contribute by making a pull request and I'll take a look when I can! If you'd like to read me, feel free to hit me up on Twitter [@brianmichel](https://www.twitter.com/brianmichel).
