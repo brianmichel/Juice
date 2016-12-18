@@ -30,14 +30,24 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
         }
         set {
             guard let window = window,
-                let value = newValue else {
+                let contentView = window.contentView,
+                let value = newValue,
+                let newView = newValue?.view else {
                 super.contentViewController = newValue
                 return
             }
             
+            let preferredOrigin = window.frame.origin
+            let heightDelta = newView.frame.height - contentView.frame.height
+            
             value.preferredScreenOrigin = window.frame.origin
             super.contentViewController = value
-            window.setFrameOrigin(value.preferredScreenOrigin)
+            
+            var windowFrame = window.frame
+            windowFrame.size = NSSize(width: windowFrame.size.width, height: windowFrame.size.height + heightDelta)
+            windowFrame.origin = NSPoint(x: preferredOrigin.x, y: preferredOrigin.y - heightDelta)
+    
+            window.setFrameOrigin(windowFrame.origin)
         }
     }
     
@@ -48,6 +58,9 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
     override func windowDidLoad() {
         super.windowDidLoad()
         window?.level = Int(CGWindowLevelForKey(.floatingWindow))
+        
+        toolbar.selectedItemIdentifier = Identifiers.General
+        generalToolbarItemClicked()
     }
     
     func customToolbarItem(itemForItemIdentifier itemIdentifier: String, label: String, paletteLabel: String, toolTip: String, target: AnyObject, itemContent: NSImage?, action: Selector?, menu: NSMenu?) -> NSToolbarItem? {
