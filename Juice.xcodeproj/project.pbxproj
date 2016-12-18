@@ -28,6 +28,8 @@
 		728EB9361E060DA900920B83 /* FileBackedChargeScaleDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9351E060DA900920B83 /* FileBackedChargeScaleDisplay.swift */; };
 		728EB9381E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9371E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift */; };
 		728EB93A1E061B4700920B83 /* PreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9391E061B4700920B83 /* PreferencesStorage.swift */; };
+		728EB9431E06661800920B83 /* AboutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */; };
+		728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */; };
 		BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FE5472659FE380046C1766 /* Pods_Juice.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		728EB9351E060DA900920B83 /* FileBackedChargeScaleDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileBackedChargeScaleDisplay.swift; path = Classes/FileBackedChargeScaleDisplay.swift; sourceTree = "<group>"; };
 		728EB9371E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileBackedChargeScaleDisplay+Extensions.swift"; path = "Classes/FileBackedChargeScaleDisplay+Extensions.swift"; sourceTree = "<group>"; };
 		728EB9391E061B4700920B83 /* PreferencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesStorage.swift; path = Classes/PreferencesStorage.swift; sourceTree = "<group>"; };
+		728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPreferencesViewController.swift; path = Classes/AboutPreferencesViewController.swift; sourceTree = "<group>"; };
+		728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutPreferencesViewController.xib; path = Classes/AboutPreferencesViewController.xib; sourceTree = "<group>"; };
 		77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.release.xcconfig"; sourceTree = "<group>"; };
 		89FE5472659FE380046C1766 /* Pods_Juice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,6 +160,7 @@
 		725AA5DE1E05DBCD006E5DDE /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				728EB9401E06660300920B83 /* About */,
 				7230D7561E05F47D0001F3E9 /* Credits */,
 				7230D7511E05E8A60001F3E9 /* General */,
 				725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */,
@@ -183,6 +188,15 @@
 				728EB9331E0605CB00920B83 /* FileManager+Extensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		728EB9401E06660300920B83 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */,
+				728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 		A49489D7401DD5FE5654CC8B /* Pods */ = {
@@ -273,6 +287,7 @@
 				7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */,
 				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
 				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,
+				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
 				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
 				7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */,
 			);
@@ -338,6 +353,7 @@
 				725AA5D51E05C1F5006E5DDE /* StatusBarItemCoordinator.swift in Sources */,
 				725AA5D01E05C0E8006E5DDE /* PowerSourceWatcher.swift in Sources */,
 				728EB92E1E0601D800920B83 /* ChargeScaleDisplay.swift in Sources */,
+				728EB9431E06661800920B83 /* AboutPreferencesViewController.swift in Sources */,
 				728EB9381E06184000920B83 /* FileBackedChargeScaleDisplay+Extensions.swift in Sources */,
 				725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */,
 				725AA5D31E05C19A006E5DDE /* ApplicationCoordinator.swift in Sources */,

@@ -56,14 +56,12 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [String] {
         return [Identifiers.General,
-                Identifiers.Credits,
                 NSToolbarFlexibleSpaceItemIdentifier,
                 Identifiers.Tip]
     }
     
     func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [String] {
         return [Identifiers.General,
-                Identifiers.Credits,
                 Identifiers.Tip]
     }
     
@@ -89,9 +87,9 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
                                      menu: nil)
         case Identifiers.Tip:
             return customToolbarItem(itemForItemIdentifier: Identifiers.Tip,
-                                     label: "Tip",
-                                     paletteLabel: "Tip",
-                                     toolTip: "Tip the author of this app",
+                                     label: "About",
+                                     paletteLabel: "About",
+                                     toolTip: "Version Information",
                                      target: self,
                                      itemContent: NSImage(named: "Tip Icon"),
                                      action: #selector(tipToolbarItemClicked),

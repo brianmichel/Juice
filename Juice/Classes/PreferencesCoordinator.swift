@@ -29,8 +29,8 @@ final class PreferencesCoordinator: PreferencesWindowControllerDelegate {
             windowController.contentViewController = CreditsPreferencesViewController()
             windowController.window?.title = "Credits"
         case PreferencesWindowController.Identifiers.Tip:
-            windowController.contentViewController = nil
-            windowController.window?.title = "Tip"
+            windowController.contentViewController = AboutPreferencesViewController()
+            windowController.window?.title = "About"
         default:
             break
         }
