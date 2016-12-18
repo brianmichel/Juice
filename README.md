@@ -12,6 +12,10 @@ Going a step further, I wanted to define a format that would allow for people to
 ## Screenshots
 ![](https://d3vv6lp55qjaqc.cloudfront.net/items/2N0v171X0y0z3m0A2M1E/Image%202016-12-17%20at%209.29.43%20PM.png?X-CloudApp-Visitor-Id=137600)
 
+## Installation
+
+You can either compile the app through Xcode with the sources, or downloaded the latest binary that has been released [here](https://github.com/brianmichel/Juice/releases/latest)
+
 ## Adding A Scale
 
 1. Go to preferences and click the "Add New Scale", this will attempt to create and open a new `plist` file that can be used by Juice to load a custom scale. The structure of the plist is described below
