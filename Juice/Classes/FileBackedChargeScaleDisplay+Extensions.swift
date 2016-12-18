@@ -42,9 +42,9 @@ extension FileBackedChargeScaleDisplay {
                        1: "dyin'",
                        2: "💀 soon",
                        3: "plz charge",
-                       4: "half way",
+                       4: "half way-ish",
                        5: "about half",
-                       6: "about a C",
+                       6: "mediocre",
                        7: "good",
                        8: "great!!",
                        9: "i'm full"]
