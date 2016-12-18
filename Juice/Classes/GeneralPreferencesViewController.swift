@@ -7,11 +7,21 @@
 //
 
 import Cocoa
+import RxSwift
 
 class GeneralPreferencesViewController: NSViewController {
     private let preferences = PreferencesStorage.shared
     
+    private lazy var scalesChangeObservable: Observable<[ChargeScaleDisplay]> = {
+        return self.preferences.scales.asObservable()
+    }()
+    
+    private let disposableBag = DisposeBag()
+
     @IBOutlet weak var statusBarStylePopUp: NSPopUpButton!
+    @IBOutlet weak var addNewScaleButton: NSButton!
+    @IBOutlet weak var triggerRescanButton: NSButton!
+    @IBOutlet weak var scalesFoundLabel: NSTextField!
     
     override var nibName: String? {
         return "GeneralPreferencesViewController"
@@ -23,11 +33,35 @@ class GeneralPreferencesViewController: NSViewController {
         statusBarStylePopUp.target = self
         statusBarStylePopUp.action = #selector(statusBarStyleChanged)
         
-        preferences.scales.forEach({ statusBarStylePopUp.addItem(withTitle: $0.title) })
+        updatePreferencePopUp(for: preferences.scales.value)
+        
+        scalesChangeObservable.subscribe { (event) in
+            switch event {
+            case .next(let scales):
+                self.updatePreferencePopUp(for: scales)
+            default:
+                return
+            }
+        }.addDisposableTo(disposableBag)
     }
     
     @objc private func statusBarStyleChanged() {
-        let selectedScale = preferences.scales[statusBarStylePopUp.indexOfSelectedItem]
+        let selectedScale = preferences.scales.value[statusBarStylePopUp.indexOfSelectedItem]
         preferences.set(chargeDisplayScale: selectedScale)
+    }
+    
+    private func updatePreferencePopUp(`for` scales: [ChargeScaleDisplay]) {
+        statusBarStylePopUp.removeAllItems()
+        scales.forEach({ statusBarStylePopUp.addItem(withTitle: $0.title) })
+        
+        scalesFoundLabel.stringValue = "\(scales.count) Scales Found"
+    }
+    
+    @IBAction func addNewScale(_ sender: Any) {
+        // something
+    }
+    
+    @IBAction func triggerRescan(_ sender: Any) {
+        preferences.scanApplicationSupportForFiles()
     }
 }

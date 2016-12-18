@@ -22,7 +22,7 @@ struct FileBackedChargeScaleDisplay: ChargeScaleDisplay, SerializableChargeScale
     }
     
     init?(fileURL: URL) {
-        guard let dictionary = NSDictionary(contentsOfFile: fileURL.absoluteString) as? [String: Any],
+        guard let dictionary = NSDictionary(contentsOfFile: fileURL.path) as? [String: Any],
             let title = dictionary[SerializableChargeScaleDisplayConstants.title] as? String,
             let map = dictionary[SerializableChargeScaleDisplayConstants.detents] as? [String: String],
             let defaultString = dictionary[SerializableChargeScaleDisplayConstants.defaultDetentString] as? String else {
