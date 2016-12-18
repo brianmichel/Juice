@@ -10,14 +10,21 @@ lane :beta do |options|
 
   build_name = "Juice-Beta-#{BUILD_NUMBER}"
 
-  gym(
+  values = gym(
     workspace: 'Juice.xcworkspace',
     scheme: 'Juice',
     export_method: 'developer-id',
+    export_options: './fastlane/developer-id-exports.plist',
     include_bitcode: false,
-    output_directory: './build/beta',
+    output_directory: "./build/beta/#{BUILD_NUMBER}",
     output_name: "Juice-Beta-#{BUILD_NUMBER}"
   )
+
+  puts "Context #{lane_context}"
+
+  `rm -rf ../build/beta/#{BUILD_NUMBER}/Juice.app`
+
+  export_archive_developer_signed(File.expand_path("../build/beta/#{BUILD_NUMBER}"))
 
   add_git_tag(
     build_number: BUILD_NUMBER
@@ -41,15 +48,30 @@ lane :beta do |options|
    #{description}
   eos
 
+  dmg_path = create_dmg("../build/beta/#{BUILD_NUMBER}", "Juice-Beta-#{BUILD_NUMBER}")
+
   set_github_release(
     repository_name: 'brianmichel/juice',
     api_token: ENV['GITHUB_TOKEN'],
     description: release_description,
     name: "#{BUILD_NUMBER}",
     tag_name: "builds/beta/#{BUILD_NUMBER}",
-    upload_assets: [
-      './build/beta/Juice.app',
-      "./build/beta/#{build_name}.app.dSYM.zip"
-    ]
+    upload_assets: [dmg_path]
   )
+end
+
+def create_dmg(folder, dmg_name)
+  expanded_path = File.expand_path(folder)
+  UI.important "Trying to make dmg for folder #{expanded_path}"
+  `hdiutil create -fs HFS+ -srcfolder "#{expanded_path}" -volname #{dmg_name} #{folder}/#{dmg_name}.dmg`
+  raise "Unable to create DMG" unless $? == 0
+  return "#{expanded_path}/#{dmg_name}.dmg"
+end
+
+def export_archive_developer_signed(export_path, archive_path = lane_context[:XCODEBUILD_ARCHIVE], export_options = "../fastlane/developer-id-exports.plist")
+  export = File.expand_path(export_path)
+  options = File.expand_path(export_options)
+  UI.important "Attempting to re-export archive with options #{options}, to path #{export}"
+  `mkdir -p #{export_path}`
+  `xcodebuild archive -exportOptionsPlist "#{options}" -exportArchive -archivePath "#{archive_path}" -exportPath "#{export}"`
 end

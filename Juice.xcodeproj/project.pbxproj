@@ -482,7 +482,7 @@
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2016.12.18011428;
+				CURRENT_PROJECT_VERSION = 2016.12.18033401;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -500,7 +500,7 @@
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2016.12.18011428;
+				CURRENT_PROJECT_VERSION = 2016.12.18033401;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
