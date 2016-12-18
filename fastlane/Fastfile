@@ -1,7 +1,14 @@
 BUILD_NUMBER = Time.now.strftime('%Y.%m.%d%H%M%S').freeze
 
-lane :beta do
+before_all do
+  UI.important "Attempting to delete build folder..."
+  `rm -rf ./build`
+end
+
+lane :beta do |options|
   increment_build_number(build_number: BUILD_NUMBER)
+
+  build_name = "Juice-Beta-#{BUILD_NUMBER}"
 
   gym(
     workspace: 'Juice.xcworkspace',
@@ -10,5 +17,39 @@ lane :beta do
     include_bitcode: false,
     output_directory: './build/beta',
     output_name: "Juice-Beta-#{BUILD_NUMBER}"
+  )
+
+  add_git_tag(
+    build_number: BUILD_NUMBER
+  )
+
+  push_to_git_remote
+
+  description = '_No Description Specified..._'
+
+  if options[:description]
+    description = options[:description]
+  end
+
+  release_description = <<-eos
+   A new version of Juice has been published...
+
+   * Juice Version: #{get_version_number(xcodeproj: 'Juice.xcodeproj')}
+   * Juice Build: #{BUILD_NUMBER}
+
+   ## Description
+   #{description}
+  eos
+
+  set_github_release(
+    repository_name: 'brianmichel/juice',
+    api_token: ENV['GITHUB_TOKEN'],
+    description: release_description,
+    name: "#{BUILD_NUMBER}",
+    tag_name: "builds/beta/#{BUILD_NUMBER}",
+    upload_assets: [
+      './build/beta/Juice.app',
+      "./build/beta/#{build_name}.app.dSYM.zip"
+    ]
   )
 end
