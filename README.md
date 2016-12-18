@@ -70,4 +70,4 @@ If you'd like to drop your own plist to be used by the application, new files ca
 
 ## ✌️
 
-Feel free to contribute by making a pull request and I'll take a look when I can! If you'd like to read me, feel free to hit me up on Twitter [@brianmichel](https://www.twitter.com/brianmichel).
+Feel free to contribute by making a pull request and I'll take a look when I can! If you'd like to reach me, feel free to hit me up on Twitter [@brianmichel](https://www.twitter.com/brianmichel).
