@@ -14,21 +14,22 @@ extension FileBackedChargeScaleDisplay {
             makeEmojiScale(),
             makeWeirdStringScale(),
             makeASCIIScale(),
-            makeRomanNumeralScale()
+            makeRomanNumeralScale(),
+            makeHorizontalLineScale()
         ]
     }
     
     static func makeEmojiScale() -> FileBackedChargeScaleDisplay {
-        let detents = [1: "☠️",
-                       2: "💀",
-                       3: "😡",
-                       4: "😠",
-                       5: "😟",
-                       6: "😳",
-                       7: "🙄",
-                       8: "😏",
-                       9: "☺️",
-                       10: "😁"]
+        let detents = [0: "☠️",
+                       1: "💀",
+                       2: "😡",
+                       3: "😠",
+                       4: "😟",
+                       5: "😳",
+                       6: "🙄",
+                       7: "😏",
+                       8: "☺️",
+                       9: "😁"]
         
         return FileBackedChargeScaleDisplay(title: "Emoji Faces",
                                             detents: detents,
@@ -37,16 +38,16 @@ extension FileBackedChargeScaleDisplay {
     }
     
     static func makeWeirdStringScale() -> FileBackedChargeScaleDisplay {
-        let detents = [1: "ded bruv",
-                       2: "dyin'",
-                       3: "💀 soon",
-                       4: "plz charge",
-                       5: "half way",
-                       6: "about half",
-                       7: "about a C",
-                       8: "good",
-                       9: "great!!",
-                       10: "i'm full"]
+        let detents = [0: "ded bruv",
+                       1: "dyin'",
+                       2: "💀 soon",
+                       3: "plz charge",
+                       4: "half way",
+                       5: "about half",
+                       6: "about a C",
+                       7: "good",
+                       8: "great!!",
+                       9: "i'm full"]
         
         return FileBackedChargeScaleDisplay(title: "Weird Text (Clean)",
                                             detents: detents,
@@ -55,16 +56,16 @@ extension FileBackedChargeScaleDisplay {
     }
     
     static func makeASCIIScale() -> FileBackedChargeScaleDisplay {
-        let detents = [1: "├┃         ┤",
-                       2: "├┃┃        ┤",
-                       3: "├┃┃┃       ┤",
-                       4: "├┃┃┃┃      ┤",
-                       5: "├┃┃┃┃┃     ┤",
-                       6: "├┃┃┃┃┃┃    ┤",
-                       7: "├┃┃┃┃┃┃┃   ┤",
-                       8: "├┃┃┃┃┃┃┃┃  ┤",
-                       9: "├┃┃┃┃┃┃┃┃┃ ┤",
-                       10:"├┃┃┃┃┃┃┃┃┃┃┤"]
+        let detents = [0: "├┃         ┤",
+                       1: "├┃┃        ┤",
+                       2: "├┃┃┃       ┤",
+                       3: "├┃┃┃┃      ┤",
+                       4: "├┃┃┃┃┃     ┤",
+                       5: "├┃┃┃┃┃┃    ┤",
+                       6: "├┃┃┃┃┃┃┃   ┤",
+                       7: "├┃┃┃┃┃┃┃┃  ┤",
+                       8: "├┃┃┃┃┃┃┃┃┃ ┤",
+                       9: "├┃┃┃┃┃┃┃┃┃┃┤"]
         
         return FileBackedChargeScaleDisplay(title: "ASCII Battery",
                                             detents: detents,
@@ -73,20 +74,38 @@ extension FileBackedChargeScaleDisplay {
     }
     
     static func makeRomanNumeralScale() -> FileBackedChargeScaleDisplay {
-        let detents = [1: "Ⅰ",
-                       2: "Ⅱ",
-                       3: "Ⅲ",
-                       4: "Ⅳ",
-                       5: "Ⅴ",
-                       6: "Ⅵ",
-                       7: "Ⅶ",
-                       8: "Ⅷ",
-                       9: "Ⅸ",
-                       10: "Ⅹ"]
+        let detents = [0: "Ⅰ",
+                       1: "Ⅱ",
+                       2: "Ⅲ",
+                       3: "Ⅳ",
+                       4: "Ⅴ",
+                       5: "Ⅵ",
+                       6: "Ⅶ",
+                       7: "Ⅷ",
+                       8: "Ⅸ",
+                       9: "Ⅹ"]
         
         return FileBackedChargeScaleDisplay(title: "Roman Numerals",
                                             detents: detents,
                                             defaultDetentString: "et tu?",
                                             fileName: "roman-numerals")
+    }
+    
+    static func makeHorizontalLineScale() -> FileBackedChargeScaleDisplay {
+        let detents = [0: "━┅┅┅┅┅┅┅┅┅",
+                       1: "━━┅┅┅┅┅┅┅┅",
+                       2: "━━━┅┅┅┅┅┅┅",
+                       3: "━━━━┅┅┅┅┅┅",
+                       4: "━━━━━┅┅┅┅┅",
+                       5: "━━━━━━┅┅┅┅",
+                       6: "━━━━━━━┅┅┅",
+                       7: "━━━━━━━━┅┅",
+                       8: "━━━━━━━━━┅",
+                       9: "━━━━━━━━━━"]
+        
+        return FileBackedChargeScaleDisplay(title: "Dotted Line",
+                                            detents: detents,
+                                            defaultDetentString: "┅┅┅┅┅┅┅┅┅┅┅",
+                                            fileName: "dotted-line")
     }
 }

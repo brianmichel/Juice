@@ -58,18 +58,18 @@
                             </customSpacing>
                         </stackView>
                         <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKp-dg-h9b">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="21"/>
+                            <rect key="frame" x="0.0" y="0.0" width="129" height="21"/>
                             <subviews>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5lz-RA-9IK">
-                                    <rect key="frame" x="-2" y="4" width="87" height="17"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Current Scale" id="pSb-PT-l5y">
+                                    <rect key="frame" x="-2" y="4" width="91" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Current Scale:" id="pSb-PT-l5y">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
                                 <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X0b-wl-azb" userLabel="Style Picker">
-                                    <rect key="frame" x="91" y="-3" width="37" height="26"/>
+                                    <rect key="frame" x="95" y="-3" width="37" height="26"/>
                                     <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="YSI-nD-3Zg">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="menu"/>
@@ -97,8 +97,8 @@
                     </customSpacing>
                 </stackView>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="djo-6O-bhJ">
-                    <rect key="frame" x="233" y="3" width="132" height="32"/>
-                    <buttonCell key="cell" type="push" title="Add New Scale" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xXL-NV-2xU">
+                    <rect key="frame" x="264" y="3" width="101" height="32"/>
+                    <buttonCell key="cell" type="push" title="Add Scale" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xXL-NV-2xU">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
