@@ -24,6 +24,23 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
     
     weak var delegate: PreferencesWindowControllerDelegate?
     
+    override var contentViewController: NSViewController? {
+        get {
+            return super.contentViewController
+        }
+        set {
+            guard let window = window,
+                let value = newValue else {
+                super.contentViewController = newValue
+                return
+            }
+            
+            value.preferredScreenOrigin = window.frame.origin
+            super.contentViewController = value
+            window.setFrameOrigin(value.preferredScreenOrigin)
+        }
+    }
+    
     override var windowNibName: String? {
         return "PreferencesWindowController"
     }
