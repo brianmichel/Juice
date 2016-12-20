@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Juice
+
+  Created by Benjamin Noufel on 20/12/2016.
+  Copyright © 2016 Brian Michel. All rights reserved.
+*/
+CHARGED="charged";
+REMAINING="remaining";
+POWER_SOURCE="Power Source";
+QUIT_JUICE="Quit Juice";
+PREFERENCE="Preferences...";
+NOT_IMPLEMENTED="has not been implemented";
+ABOUT="About";
+ABOUT_INFORMATION="Version Information";
+POWER_ADAPTER="Power Adapter";
+BATTERY="Battery";
+UNKNOWN="Unknown";
+OFF_LINE="Off Line";
+EXTERNAL_POWER="External Power";
+GENERAL="General";
+GENERAL_SETTING="General setting";
+CREDITS="Credits";
+SCALES_FOUND="Scales Found";
+ERROR_SCAN="Error scanning application support directory";

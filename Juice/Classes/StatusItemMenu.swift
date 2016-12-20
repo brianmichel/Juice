@@ -26,23 +26,24 @@ final class StatusMenuItem: NSMenu {
         addItem(percentageItem)
         addItem(sourceTypeItem)
         addItem(NSMenuItem.separator())
-        addItem(withTitle: "Preferences...", action: #selector(preferencesClicked), keyEquivalent: "").target = self
+        addItem(withTitle: NSLocalizedString("PREFERENCE", comment:"Preferences"), action: #selector(preferencesClicked), keyEquivalent: "").target = self
         addItem(NSMenuItem.separator())
-        addItem(withTitle: "Quit Juice", action: #selector(quitClicked), keyEquivalent: "q").target = self
+        addItem(withTitle: NSLocalizedString("QUIT_JUICE", comment:"Quit juice"), action: #selector(quitClicked), keyEquivalent: "q").target = self
     }
     
     required init(coder decoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder:) " + NSLocalizedString("QUIT_JUICE", comment:"Quit juice"))
     }
     
     func update(from source: PowerSource) {
         if source.charging {
-            percentageItem.title = "\(source.chargedPercentage)% Charged"
+            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("CHARGED", comment:"Battery charged")
         }
         else {
-            percentageItem.title = "\(source.chargedPercentage)% Remaining"
+            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("REMAINING", comment:"Battery Remaining")
         }
-        sourceTypeItem.title = "Power Source: \(source.state.displayValue)"
+        sourceTypeItem.title = NSLocalizedString("POWER_SOURCE", comment:"Power source")
+ + ": \(source.state.displayValue)"
     }
     
     @objc private func preferencesClicked() {

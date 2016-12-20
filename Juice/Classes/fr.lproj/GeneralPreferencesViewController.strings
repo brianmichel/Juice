@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "0 Scales Found"; ObjectID = "1EL-UD-CHx"; */
+"1EL-UD-CHx.title" = "0 Scales Found";
+
+/* Class = "NSTextFieldCell"; title = "Rescan For Scales:"; ObjectID = "3wZ-4R-SJn"; */
+"3wZ-4R-SJn.title" = "Rescan For Scales:";
+
+/* Class = "NSButtonCell"; title = "Rescan"; ObjectID = "7hH-fu-5OW"; */
+"7hH-fu-5OW.title" = "Rescan";
+
+/* Class = "NSTextFieldCell"; title = "Current Scale:"; ObjectID = "pSb-PT-l5y"; */
+"pSb-PT-l5y.title" = "Current Scale:";
+
+/* Class = "NSButtonCell"; title = "Add Scale"; ObjectID = "xXL-NV-2xU"; */
+"xXL-NV-2xU.title" = "Add Scale";

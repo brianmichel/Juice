@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7230D7541E05E8C70001F3E9 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */; };
-		7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */; };
 		7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */; };
 		7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */; };
 		725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */; };
@@ -30,13 +29,14 @@
 		728EB93A1E061B4700920B83 /* PreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9391E061B4700920B83 /* PreferencesStorage.swift */; };
 		728EB9431E06661800920B83 /* AboutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */; };
 		728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */; };
+		AABBF1291E093C6D004D5B6E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AABBF12B1E093C6D004D5B6E /* Localizable.strings */; };
+		AABBF1311E095C33004D5B6E /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AABBF1331E095C33004D5B6E /* GeneralPreferencesViewController.xib */; };
 		BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FE5472659FE380046C1766 /* Pods_Juice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.debug.xcconfig"; sourceTree = "<group>"; };
 		7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralPreferencesViewController.swift; path = Classes/GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
-		7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralPreferencesViewController.xib; path = Classes/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsPreferencesViewController.swift; path = Classes/CreditsPreferencesViewController.swift; sourceTree = "<group>"; };
 		7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsPreferencesViewController.xib; path = Classes/CreditsPreferencesViewController.xib; sourceTree = "<group>"; };
 		725AA5BC1E05BF3A006E5DDE /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +63,11 @@
 		728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutPreferencesViewController.xib; path = Classes/AboutPreferencesViewController.xib; sourceTree = "<group>"; };
 		77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.release.xcconfig"; sourceTree = "<group>"; };
 		89FE5472659FE380046C1766 /* Pods_Juice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABBF12A1E093C6D004D5B6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AABBF12D1E093C86004D5B6E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		AABBF12E1E093C86004D5B6E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AABBF1321E095C33004D5B6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		AABBF1351E095C38004D5B6E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */,
-				7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */,
+				AABBF1331E095C33004D5B6E /* GeneralPreferencesViewController.xib */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 		725AA5B31E05BF3A006E5DDE = {
 			isa = PBXGroup;
 			children = (
+				AABBF12B1E093C6D004D5B6E /* Localizable.strings */,
 				725AA5BE1E05BF3A006E5DDE /* Juice */,
 				725AA5BD1E05BF3A006E5DDE /* Products */,
 				A49489D7401DD5FE5654CC8B /* Pods */,
@@ -251,7 +257,7 @@
 				TargetAttributes = {
 					725AA5BB1E05BF3A006E5DDE = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YN24FFRTC8;
+						DevelopmentTeam = A925WRGBAZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -268,6 +274,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 725AA5B31E05BF3A006E5DDE;
 			productRefGroup = 725AA5BD1E05BF3A006E5DDE /* Products */;
@@ -284,9 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */,
+				AABBF1311E095C33004D5B6E /* GeneralPreferencesViewController.xib in Resources */,
 				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
 				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,
+				AABBF1291E093C6D004D5B6E /* Localizable.strings in Resources */,
 				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
 				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
 				7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */,
@@ -375,8 +383,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				725AA5C41E05BF3A006E5DDE /* Base */,
+				AABBF12D1E093C86004D5B6E /* fr */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AABBF12B1E093C6D004D5B6E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AABBF12A1E093C6D004D5B6E /* en */,
+				AABBF12E1E093C86004D5B6E /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AABBF1331E095C33004D5B6E /* GeneralPreferencesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AABBF1321E095C33004D5B6E /* en */,
+				AABBF1351E095C38004D5B6E /* fr */,
+			);
+			name = GeneralPreferencesViewController.xib;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -386,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -436,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -483,7 +513,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2016.12.18033401;
-				DEVELOPMENT_TEAM = YN24FFRTC8;
+				DEVELOPMENT_TEAM = A925WRGBAZ;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
@@ -501,7 +531,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2016.12.18033401;
-				DEVELOPMENT_TEAM = YN24FFRTC8;
+				DEVELOPMENT_TEAM = A925WRGBAZ;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;

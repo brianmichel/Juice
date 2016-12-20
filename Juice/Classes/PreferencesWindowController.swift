@@ -99,17 +99,17 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
         switch itemIdentifier {
         case Identifiers.General:
             return customToolbarItem(itemForItemIdentifier: Identifiers.General,
-                                     label: "General",
-                                     paletteLabel: "General",
-                                     toolTip: "General Settings",
+                                     label: NSLocalizedString("GENERAL", comment: "General"),
+                                     paletteLabel: NSLocalizedString("GENERAL", comment: "General"),
+                                     toolTip: NSLocalizedString("GENERAL_SETTING", comment: "General setting"),
                                      target: self,
                                      itemContent: NSImage(named: "General Icon"),
                                      action: #selector(generalToolbarItemClicked),
                                      menu: nil)
         case Identifiers.Credits:
             return customToolbarItem(itemForItemIdentifier: Identifiers.Credits,
-                                     label: "Credits",
-                                     paletteLabel: "Credits",
+                                     label: NSLocalizedString("CREDITS", comment: "Credits"),
+                                     paletteLabel: NSLocalizedString("CREDITS", comment: "Credits"),
                                      toolTip: "Credits for this app",
                                      target: self,
                                      itemContent: NSImage(named: "Credits Icon"),
@@ -117,9 +117,9 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
                                      menu: nil)
         case Identifiers.Tip:
             return customToolbarItem(itemForItemIdentifier: Identifiers.Tip,
-                                     label: "About",
-                                     paletteLabel: "About",
-                                     toolTip: "Version Information",
+                                     label: NSLocalizedString("ABOUT", comment: "About"),
+                                     paletteLabel: NSLocalizedString("ABOUT", comment: "About"),
+                                     toolTip: NSLocalizedString("ABOUT_INFORMATION", comment: "About"),
                                      target: self,
                                      itemContent: NSImage(named: "Tip Icon"),
                                      action: #selector(tipToolbarItemClicked),
