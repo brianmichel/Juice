@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
         <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
@@ -11,6 +11,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="GeneralPreferencesViewController" customModule="Juice" customModuleProvider="target">
             <connections>
                 <outlet property="addNewScaleButton" destination="djo-6O-bhJ" id="Ezo-Ig-3F7"/>
+                <outlet property="editScaleButton" destination="5BC-jd-yXY" id="7Ut-oH-XxG"/>
                 <outlet property="scalesFoundLabel" destination="tJ9-Bl-dJL" id="Vk5-mi-QyC"/>
                 <outlet property="statusBarStylePopUp" destination="X0b-wl-azb" id="pOq-dF-Spq"/>
                 <outlet property="triggerRescanButton" destination="vc0-0M-GEv" id="o3F-B0-Vaq"/>
@@ -58,7 +59,7 @@
                             </customSpacing>
                         </stackView>
                         <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKp-dg-h9b">
-                            <rect key="frame" x="0.0" y="0.0" width="129" height="21"/>
+                            <rect key="frame" x="0.0" y="0.0" width="191" height="21"/>
                             <subviews>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5lz-RA-9IK">
                                     <rect key="frame" x="-2" y="4" width="91" height="17"/>
@@ -76,12 +77,24 @@
                                         <menu key="menu" id="pmD-xM-VYJ"/>
                                     </popUpButtonCell>
                                 </popUpButton>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5BC-jd-yXY">
+                                    <rect key="frame" x="133" y="-7" width="64" height="32"/>
+                                    <buttonCell key="cell" type="push" title="Edit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2WF-yR-gWV">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                        <connections>
+                                            <action selector="editCurrentScale:" target="-2" id="jb6-y4-2w4"/>
+                                        </connections>
+                                    </buttonCell>
+                                </button>
                             </subviews>
                             <visibilityPriorities>
                                 <integer value="1000"/>
                                 <integer value="1000"/>
+                                <integer value="1000"/>
                             </visibilityPriorities>
                             <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
                                 <real value="3.4028234663852886e+38"/>
                                 <real value="3.4028234663852886e+38"/>
                             </customSpacing>

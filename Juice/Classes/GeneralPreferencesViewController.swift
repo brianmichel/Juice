@@ -22,6 +22,7 @@ class GeneralPreferencesViewController: NSViewController {
     @IBOutlet weak var addNewScaleButton: NSButton!
     @IBOutlet weak var triggerRescanButton: NSButton!
     @IBOutlet weak var scalesFoundLabel: NSTextField!
+    @IBOutlet weak var editScaleButton: NSButton!
     
     override var nibName: String? {
         return "GeneralPreferencesViewController"
@@ -73,5 +74,10 @@ class GeneralPreferencesViewController: NSViewController {
     
     @IBAction func triggerRescan(_ sender: Any) {
         preferences.scanApplicationSupportForFiles()
+    }
+    
+    @IBAction func editCurrentScale(_ sender: Any) {
+        let currentScale = preferences.scales.value[statusBarStylePopUp.indexOfSelectedItem]
+        NSWorkspace.shared().open((FileManager.default.applicationSupportDirectory?.appendingPathComponent(currentScale.fileName))!)
     }
 }
