@@ -6,7 +6,7 @@
 //  Copyright © 2016 Brian Michel. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 protocol ChargeScaleDisplay {
     var title: String { get }
@@ -50,6 +50,12 @@ extension SerializableChargeScaleDisplay where Self: ChargeScaleDisplay {
         
         do {
             let data = try PropertyListSerialization.data(fromPropertyList: plistValues, format: .xml, options: .allZeros)
+            
+            let fileWrapper = FileWrapper(directoryWithFileWrappers: [fileName: FileWrapper(regularFileWithContents: data)])
+            try fileWrapper.write(to: applicationSupportDirectory.appendingPathComponent("sdfsfsf.scale"),
+                                  options: .atomic,
+                                  originalContentsURL: nil)
+            
             try data.write(to: completeFilePath, options: .atomicWrite)
         } catch (let error) {
             print("Error serializing scale: \(error)")

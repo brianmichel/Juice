@@ -4,6 +4,29 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>scale</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>Scale File Icon</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array/>
+			<key>CFBundleTypeName</key>
+			<string>Juice Scale</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.bsm.macos.juice.scale</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<integer>1</integer>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFile</key>
@@ -32,5 +55,29 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Juice Custom Scale</string>
+			<key>UTTypeIconFile</key>
+			<string>Scale File Icon</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.bsm.macos.juice.scale</string>
+			<key>UTTypeReferenceURL</key>
+			<string>https://github.com/brianmichel/juice</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>scale</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

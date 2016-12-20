@@ -11,6 +11,7 @@
 		7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */; };
 		7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */; };
 		7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */; };
+		724E9AAB1E08B60400631881 /* Scale File Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 724E9AAA1E08B60400631881 /* Scale File Icon.icns */; };
 		725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */; };
 		725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C11E05BF3A006E5DDE /* Assets.xcassets */; };
 		725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C31E05BF3A006E5DDE /* MainMenu.xib */; };
@@ -39,6 +40,7 @@
 		7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralPreferencesViewController.xib; path = Classes/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsPreferencesViewController.swift; path = Classes/CreditsPreferencesViewController.swift; sourceTree = "<group>"; };
 		7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsPreferencesViewController.xib; path = Classes/CreditsPreferencesViewController.xib; sourceTree = "<group>"; };
+		724E9AAA1E08B60400631881 /* Scale File Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Scale File Icon.icns"; sourceTree = "<group>"; };
 		725AA5BC1E05BF3A006E5DDE /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		725AA5C11E05BF3A006E5DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +97,24 @@
 			name = Credits;
 			sourceTree = "<group>";
 		};
+		724E9AA81E08B5E200631881 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				724E9AA91E08B5EA00631881 /* Icons */,
+				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
+				728EB9321E0604D400920B83 /* Juice.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		724E9AA91E08B5EA00631881 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				724E9AAA1E08B60400631881 /* Scale File Icon.icns */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		725AA5B31E05BF3A006E5DDE = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +136,13 @@
 		725AA5BE1E05BF3A006E5DDE /* Juice */ = {
 			isa = PBXGroup;
 			children = (
-				728EB9321E0604D400920B83 /* Juice.entitlements */,
+				724E9AA81E08B5E200631881 /* Resources */,
 				728EB92F1E06032600920B83 /* Extensions */,
 				728EB92C1E0601A700920B83 /* Display String Parsing */,
 				725AA5DE1E05DBCD006E5DDE /* Preferences */,
 				725AA5D11E05C18A006E5DDE /* Main Application Hierarchy */,
 				725AA5CC1E05C083006E5DDE /* Power Source */,
 				725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */,
-				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
 				725AA5C31E05BF3A006E5DDE /* MainMenu.xib */,
 				725AA5C61E05BF3A006E5DDE /* Info.plist */,
 			);
@@ -286,6 +305,7 @@
 			files = (
 				7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */,
 				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
+				724E9AAB1E08B60400631881 /* Scale File Icon.icns in Resources */,
 				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,
 				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
 				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
