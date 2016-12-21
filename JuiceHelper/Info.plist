@@ -20,12 +20,10 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>529</string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.lifestyle</string>
+	<key>LSBackgroundOnly</key>
+	<true/>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
-	<key>LSUIElement</key>
-	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Brian Michel. All rights reserved.</string>
 	<key>NSMainNibFile</key>
