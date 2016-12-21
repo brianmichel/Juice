@@ -11,6 +11,7 @@
 		7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */; };
 		7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */; };
 		7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */; };
+		72499CAD1E0A1AEB005DAE01 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 72499CAC1E0A1AEB005DAE01 /* dsa_pub.pem */; };
 		725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */; };
 		725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C11E05BF3A006E5DDE /* Assets.xcassets */; };
 		725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C31E05BF3A006E5DDE /* MainMenu.xib */; };
@@ -59,6 +60,7 @@
 		7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralPreferencesViewController.xib; path = Classes/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsPreferencesViewController.swift; path = Classes/CreditsPreferencesViewController.swift; sourceTree = "<group>"; };
 		7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsPreferencesViewController.xib; path = Classes/CreditsPreferencesViewController.xib; sourceTree = "<group>"; };
+		72499CAC1E0A1AEB005DAE01 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		725AA5BC1E05BF3A006E5DDE /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		725AA5C11E05BF3A006E5DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,15 @@
 			name = Credits;
 			sourceTree = "<group>";
 		};
+		72499CAB1E0A1ABE005DAE01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72499CAC1E0A1AEB005DAE01 /* dsa_pub.pem */,
+				728EB9321E0604D400920B83 /* Juice.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		725AA5B31E05BF3A006E5DDE = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +165,7 @@
 		725AA5BE1E05BF3A006E5DDE /* Juice */ = {
 			isa = PBXGroup;
 			children = (
-				728EB9321E0604D400920B83 /* Juice.entitlements */,
+				72499CAB1E0A1ABE005DAE01 /* Resources */,
 				728EB92F1E06032600920B83 /* Extensions */,
 				728EB92C1E0601A700920B83 /* Display String Parsing */,
 				725AA5DE1E05DBCD006E5DDE /* Preferences */,
@@ -372,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72499CAD1E0A1AEB005DAE01 /* dsa_pub.pem in Resources */,
 				7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */,
 				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
 				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,

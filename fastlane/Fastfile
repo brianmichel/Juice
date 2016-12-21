@@ -1,3 +1,5 @@
+fastlane_require 'nokogiri'
+
 BUILD_NUMBER = Time.now.strftime('%Y.%m.%d%H%M%S').freeze
 
 before_all do

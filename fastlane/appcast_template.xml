@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Juice App Changelog</title>
+    <description>A Changelog for updates to the Juice application.</description>
+    <language>en</language>
+      <item>
+        <title></title>
+        <description>
+        </description>
+        <pubDate></pubDate>
+        <enclosure url="http://0.0.0.0:1337/Sparkle_Test_App.zip" sparkle:version="2.0" length="$INSERT_ARCHIVE_LENGTH" type="application/octet-stream" sparkle:dsaSignature="$INSERT_DSA_SIGNATURE" />
+      </item>
+  </channel>
+</rss>
