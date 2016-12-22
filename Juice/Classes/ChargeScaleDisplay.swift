@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cocoa
 
 protocol ChargeScaleDisplay {
     var title: String { get }
@@ -52,7 +53,7 @@ extension SerializableChargeScaleDisplay where Self: ChargeScaleDisplay {
             let data = try PropertyListSerialization.data(fromPropertyList: plistValues, format: .xml, options: .allZeros)
             try data.write(to: completeFilePath, options: .atomicWrite)
         } catch (let error) {
-            print("Error serializing scale: \(error)")
+            print(NSLocalizedString("Error serializing scale", comment: "Error serializing scale") + ": \(error)")
         }
     }
 }

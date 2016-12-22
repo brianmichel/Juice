@@ -42,7 +42,7 @@ final class PreferencesStorage {
                 
                 self?.scales.value = localScales
             } catch (let error) {
-                print("Error scanning application support directory: \(error)")
+                print(NSLocalizedString("Error scanning application support directory", comment: "Error scanning application support directory") + ": \(error)")
             }
         }
     }

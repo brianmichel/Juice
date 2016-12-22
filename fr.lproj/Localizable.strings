@@ -1,0 +1,33 @@
+/*
+ Localizable.strings
+ Juice
+ 
+ Created by Benjamin Noufel on 20/12/2016.
+ Copyright © 2016 Brian Michel. All rights reserved.
+ */
+"Charged"="chargés";
+"Remaining"="restant";
+"Power Source"="Souce d'alimentation";
+"Quit Juice"="Quitter Juice";
+"Preferences"="Préférences...";
+"has not been implemented"="n'as pas été implémenté";
+"About"="À propos";
+"Version Information"="Information de la version";
+"Power Adapter"="adaptateur secteur";
+"Battery"="Batterie";
+"Unknown"="Inconnue";
+"Off Line"="Hors Ligne";
+"External Power"="Alimentation Externe";
+"General"="Général";
+"General setting"="Réglage général";
+"Credits"="Crédits";
+"Scales Found"="Scales Found";
+"Error scanning application support directory"="Error scanning application support directory";
+"title"="titre";
+"default"="Défaut";
+"detents"="detents";
+"Error serializing scale"="Error serializing scale";
+"Unknown Version"="Version Inconnue";
+"Unknown Build"="Build Inconnue";
+"Credits for this app"="Crédits pour cette application";
+"Indicates the current battery charge percentage"="Indique le pourcentage de charge de la batterie";
