@@ -25,13 +25,13 @@ final class PreferencesCoordinator: PreferencesWindowControllerDelegate {
             
         case PreferencesWindowController.Identifiers.General:
             windowController.contentViewController = GeneralPreferencesViewController()
-            windowController.window?.title = NSLocalizedString("GENERAL", comment: "General")
+            windowController.window?.title = NSLocalizedString("General", comment: "General")
         case PreferencesWindowController.Identifiers.Credits:
             windowController.contentViewController = CreditsPreferencesViewController()
-            windowController.window?.title = NSLocalizedString("CREDITS", comment: "Credits")
+            windowController.window?.title = NSLocalizedString("Credits", comment: "Credits")
         case PreferencesWindowController.Identifiers.Tip:
             windowController.contentViewController = AboutPreferencesViewController()
-            windowController.window?.title = NSLocalizedString("ABOUT", comment: "About")
+            windowController.window?.title = NSLocalizedString("About", comment: "About")
         default:
             break
         }

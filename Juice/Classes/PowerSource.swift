@@ -17,13 +17,13 @@ enum PowerSourceState: String {
     var displayValue: String {
         switch self {
         case .unknown:
-            return NSLocalizedString("UNKNOWN", comment: "Unknown")
+            return NSLocalizedString("Unknown", comment: "Unknown")
         case .offLine:
-            return NSLocalizedString("OFF_LINE", comment: "Off Line")
+            return NSLocalizedString("Off Line", comment: "Off Line")
         case .ac:
-            return NSLocalizedString("POWER_ADAPTER", comment: "Power adapter")
+            return NSLocalizedString("Power Adapter", comment: "Power Adapter")
         case .battery:
-            return NSLocalizedString("BATTERY", comment: "Battery")
+            return NSLocalizedString("Battery", comment: "Battery")
         }
     }
 }
@@ -36,11 +36,11 @@ enum PowerSourceType: String {
     var displayValue: String {
         switch self {
         case .unknown:
-            return NSLocalizedString("UNKNOWN", comment: "Unknown")
+            return NSLocalizedString("Unknown", comment: "Unknown")
         case .battery:
-            return NSLocalizedString("BATTERY", comment: "Battery")
+            return NSLocalizedString("Battery", comment: "Battery")
         case .ups:
-            return NSLocalizedString("EXTERNAL_POWER", comment: "External Power")
+            return NSLocalizedString("External Power", comment: "External Power")
         }
     }
 }

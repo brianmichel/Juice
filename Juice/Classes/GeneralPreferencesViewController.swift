@@ -56,7 +56,7 @@ class GeneralPreferencesViewController: NSViewController {
         
         statusBarStylePopUp.selectItem(withTitle: preferences.chargeDisplayScale.value.title)
         
-        scalesFoundLabel.stringValue = "\(scales.count) " + NSLocalizedString("SCALES_FOUND", comment: "Scales Found")
+        scalesFoundLabel.stringValue = "\(scales.count) " + NSLocalizedString("Scales Found", comment: "Scales Found")
     }
     
     @IBAction func addNewScale(_ sender: Any) {

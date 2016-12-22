@@ -21,28 +21,28 @@ final class StatusMenuItem: NSMenu {
     override init(title: String) {
         super.init(title: title)
         
-        percentageItem.toolTip = "Indicates the current battery charge percentage"
+        percentageItem.toolTip = NSLocalizedString("Indicates the current battery charge percentage", comment:"Indicates the current battery charge percentage")
         
         addItem(percentageItem)
         addItem(sourceTypeItem)
         addItem(NSMenuItem.separator())
-        addItem(withTitle: NSLocalizedString("PREFERENCE", comment:"Preferences"), action: #selector(preferencesClicked), keyEquivalent: "").target = self
+        addItem(withTitle: NSLocalizedString("Preferences", comment:"Preferences"), action: #selector(preferencesClicked), keyEquivalent: "").target = self
         addItem(NSMenuItem.separator())
-        addItem(withTitle: NSLocalizedString("QUIT_JUICE", comment:"Quit juice"), action: #selector(quitClicked), keyEquivalent: "q").target = self
+        addItem(withTitle: NSLocalizedString("Quit Juice", comment:"Quit juice"), action: #selector(quitClicked), keyEquivalent: "q").target = self
     }
     
     required init(coder decoder: NSCoder) {
-        fatalError("init(coder:) " + NSLocalizedString("QUIT_JUICE", comment:"Quit juice"))
+        fatalError("init(coder:) " + NSLocalizedString("Quit Juice", comment:"Quit juice"))
     }
     
     func update(from source: PowerSource) {
         if source.charging {
-            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("CHARGED", comment:"Battery charged")
+            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("Charged", comment:"Battery charged")
         }
         else {
-            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("REMAINING", comment:"Battery Remaining")
+            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("Remaining", comment:"Battery Remaining")
         }
-        sourceTypeItem.title = NSLocalizedString("POWER_SOURCE", comment:"Power source")
+        sourceTypeItem.title = NSLocalizedString("Power Source", comment:"Power source")
  + ": \(source.state.displayValue)"
     }
     

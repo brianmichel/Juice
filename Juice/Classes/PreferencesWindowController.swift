@@ -99,27 +99,27 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
         switch itemIdentifier {
         case Identifiers.General:
             return customToolbarItem(itemForItemIdentifier: Identifiers.General,
-                                     label: NSLocalizedString("GENERAL", comment: "General"),
-                                     paletteLabel: NSLocalizedString("GENERAL", comment: "General"),
-                                     toolTip: NSLocalizedString("GENERAL_SETTING", comment: "General setting"),
+                                     label: NSLocalizedString("General", comment: "General"),
+                                     paletteLabel: NSLocalizedString("General", comment: "General"),
+                                     toolTip: NSLocalizedString("General setting", comment: "General setting"),
                                      target: self,
                                      itemContent: NSImage(named: "General Icon"),
                                      action: #selector(generalToolbarItemClicked),
                                      menu: nil)
         case Identifiers.Credits:
             return customToolbarItem(itemForItemIdentifier: Identifiers.Credits,
-                                     label: NSLocalizedString("CREDITS", comment: "Credits"),
-                                     paletteLabel: NSLocalizedString("CREDITS", comment: "Credits"),
-                                     toolTip: "Credits for this app",
+                                     label: NSLocalizedString("Credits", comment: "Credits"),
+                                     paletteLabel: NSLocalizedString("Credits", comment: "Credits"),
+                                     toolTip: NSLocalizedString("Credits for this app", comment: "Credits for this app"),
                                      target: self,
                                      itemContent: NSImage(named: "Credits Icon"),
                                      action: #selector(creditsToolbarItemClicked),
                                      menu: nil)
         case Identifiers.Tip:
             return customToolbarItem(itemForItemIdentifier: Identifiers.Tip,
-                                     label: NSLocalizedString("ABOUT", comment: "About"),
-                                     paletteLabel: NSLocalizedString("ABOUT", comment: "About"),
-                                     toolTip: NSLocalizedString("ABOUT_INFORMATION", comment: "About"),
+                                     label: NSLocalizedString("About", comment: "About"),
+                                     paletteLabel: NSLocalizedString("About", comment: "About"),
+                                     toolTip: NSLocalizedString("Version Information", comment: "Version Information"),
                                      target: self,
                                      itemContent: NSImage(named: "Tip Icon"),
                                      action: #selector(tipToolbarItemClicked),

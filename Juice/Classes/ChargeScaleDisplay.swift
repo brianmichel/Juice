@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cocoa
 
 protocol ChargeScaleDisplay {
     var title: String { get }
@@ -18,9 +19,9 @@ protocol ChargeScaleDisplay {
 }
 
 enum SerializableChargeScaleDisplayConstants {
-    static let title = "title"
-    static let detents = "detents"
-    static let defaultDetentString = "default"
+    static let title = NSLocalizedString("title", comment: "title")
+    static let detents = NSLocalizedString("detents", comment: "detents")
+    static let defaultDetentString = NSLocalizedString("default", comment: "default")
 }
 
 protocol SerializableChargeScaleDisplay {
@@ -52,7 +53,7 @@ extension SerializableChargeScaleDisplay where Self: ChargeScaleDisplay {
             let data = try PropertyListSerialization.data(fromPropertyList: plistValues, format: .xml, options: .allZeros)
             try data.write(to: completeFilePath, options: .atomicWrite)
         } catch (let error) {
-            print("Error serializing scale: \(error)")
+            print(NSLocalizedString("Error serializing scale", comment: "Error serializing scale") + ": \(error)")
         }
     }
 }
