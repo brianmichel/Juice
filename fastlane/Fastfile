@@ -1,9 +1,13 @@
+#!/usr/bin/ruby
 fastlane_require 'nokogiri'
+fastlane_require 'aws-sdk'
+require './AppCastUpdater.rb'
 
 BUILD_NUMBER = Time.now.strftime('%Y.%m.%d%H%M%S').freeze
+GITHUB_DOWNLOAD_URL = 'https://github.com/brianmichel/Juice/releases/download'.freeze
 
 before_all do
-  UI.important "Attempting to clearn build artifacts..."
+  UI.important 'Attempting to clearn build artifacts...'
   `rm -rf ../build`
 end
 
@@ -12,19 +16,15 @@ lane :beta do |options|
 
   build_name = "Juice-Beta-#{BUILD_NUMBER}"
 
-  values = gym(
+  gym(
     workspace: 'Juice.xcworkspace',
     scheme: 'Juice',
     export_method: 'developer-id',
     export_options: './fastlane/developer-id-exports.plist',
     include_bitcode: false,
     output_directory: "./build/beta/#{BUILD_NUMBER}",
-    output_name: "Juice-Beta-#{BUILD_NUMBER}"
+    output_name: build_name
   )
-
-  puts "Context #{lane_context}"
-
-  `rm -rf ../build/beta/#{BUILD_NUMBER}/Juice.app`
 
   export_archive_developer_signed(File.expand_path("../build/beta/#{BUILD_NUMBER}"))
 
@@ -50,16 +50,21 @@ lane :beta do |options|
    #{description}
   eos
 
-  dmg_path = create_dmg("../build/beta/#{BUILD_NUMBER}", "Juice-Beta-#{BUILD_NUMBER}")
+  dmg_path = create_dmg("../build/beta/#{BUILD_NUMBER}", build_name)
+
+  tag_name = "builds/beta/#{BUILD_NUMBER}"
 
   set_github_release(
     repository_name: 'brianmichel/juice',
     api_token: ENV['GITHUB_TOKEN'],
     description: release_description,
-    name: "#{BUILD_NUMBER}",
-    tag_name: "builds/beta/#{BUILD_NUMBER}",
+    name: BUILD_NUMBER.to_s,
+    tag_name: tag_name,
     upload_assets: [dmg_path]
   )
+
+  download_url = "#{GITHUB_DOWNLOAD_URL}/#{CGI.escape(tag_name)}/#{build_name}.dmg"
+  upload_app_cast(description, dmg_path, download_url)
 end
 
 def create_dmg(folder, dmg_name)
@@ -67,13 +72,39 @@ def create_dmg(folder, dmg_name)
   UI.important "Trying to make dmg for folder #{expanded_path}"
   `hdiutil create -fs HFS+ -srcfolder "#{expanded_path}" -volname #{dmg_name} #{folder}/#{dmg_name}.dmg`
   raise "Unable to create DMG" unless $? == 0
-  return "#{expanded_path}/#{dmg_name}.dmg"
+  "#{expanded_path}/#{dmg_name}.dmg"
 end
 
-def export_archive_developer_signed(export_path, archive_path = lane_context[:XCODEBUILD_ARCHIVE], export_options = "../fastlane/developer-id-exports.plist")
+def export_archive_developer_signed(export_path,
+                                    archive_path = lane_context[:XCODEBUILD_ARCHIVE],
+                                    export_options = '../fastlane/developer-id-exports.plist')
   export = File.expand_path(export_path)
   options = File.expand_path(export_options)
   UI.important "Attempting to re-export archive with options #{options}, to path #{export}"
   `mkdir -p #{export_path}`
   `xcodebuild archive -exportOptionsPlist "#{options}" -exportArchive -archivePath "#{archive_path}" -exportPath "#{export}"`
+end
+
+def upload_app_cast(description, archive_path, download_url)
+  UI.important 'Packaging update as app cast for Sparkle...'
+  package = AppCastUpdatePackage.new
+  generator = AppCastGenerator.new
+
+  package.template_path = File.expand_path('./appcast_template.xml')
+  package.archive_path = File.expand_path(archive_path)
+  package.title = 'Juice Changelog'
+  package.description = description
+  package.download_url = download_url
+  package.cast_output_path = Tempfile.new('appcast.xml')
+  generator.prepare_appcast_update(package)
+
+  upload_to_s3('juice-sparkle', package.cast_output_path, 'appcast.xml')
+end
+
+def upload_to_s3(bucket_name, file_path, s3_name)
+  Aws.config[:credentials] = Aws::SharedCredentials.new
+  s3 = Aws::S3::Resource.new
+  bucket = s3.bucket(bucket_name)
+  object = bucket.object(s3_name)
+  object.put(body: File.open(file_path, 'rb'), acl: 'public-read')
 end
