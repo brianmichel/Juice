@@ -36,7 +36,6 @@
 		72DA736A1E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
 		72DA736C1E09FF2E003F9262 /* JuiceHelper.app in Copy JuiceHelper */ = {isa = PBXBuildFile; fileRef = 72DA735A1E09FE19003F9262 /* JuiceHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA66D5441E0C697E00D83161 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA66D5461E0C697E00D83161 /* Localizable.strings */; };
-		AA66D5561E0C77EE00D83161 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA66D5581E0C77EE00D83161 /* GeneralPreferencesViewController.xib */; };
 		BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FE5472659FE380046C1766 /* Pods_Juice.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +56,8 @@
 /* Begin PBXFileReference section */
 		3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.debug.xcconfig"; sourceTree = "<group>"; };
 		7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralPreferencesViewController.swift; path = Classes/GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
+		7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralPreferencesViewController.xib; path = Classes/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsPreferencesViewController.swift; path = Classes/CreditsPreferencesViewController.swift; sourceTree = "<group>"; };
 		7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsPreferencesViewController.xib; path = Classes/CreditsPreferencesViewController.xib; sourceTree = "<group>"; };
 		725AA5BC1E05BF3A006E5DDE /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,12 +92,12 @@
 		72DAC54A1E0A0A050036E3BF /* JuiceHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JuiceHelper.entitlements; sourceTree = "<group>"; };
 		77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.release.xcconfig"; sourceTree = "<group>"; };
 		89FE5472659FE380046C1766 /* Pods_Juice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA66D5451E0C697E00D83161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AA66D5471E0C698600D83161 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		AA66D5481E0C698700D83161 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		AA66D5491E0C698700D83161 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AA66D5571E0C77EE00D83161 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
-		AA66D55B1E0C77F700D83161 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		AA15A2731E0E533400E5AC84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		AA15A2741E0E533400E5AC84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		AA15A2751E0E533F00E5AC84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AA15A2791E0E53CF00E5AC84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		AA15A27A1E0E53CF00E5AC84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		AA15A27B1E0E53D600E5AC84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +122,6 @@
 		7230D7511E05E8A60001F3E9 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				AA66D5581E0C77EE00D83161 /* GeneralPreferencesViewController.xib */,
 				7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */,
 			);
 			name = General;
@@ -335,7 +335,7 @@
 				TargetAttributes = {
 					725AA5BB1E05BF3A006E5DDE = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = A925WRGBAZ;
+						DevelopmentTeam = YN24FFRTC8;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -345,7 +345,7 @@
 					};
 					72DA73591E09FE19003F9262 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = A925WRGBAZ;
+						DevelopmentTeam = YN24FFRTC8;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -360,9 +360,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				fr,
+				en,
 			);
 			mainGroup = 725AA5B31E05BF3A006E5DDE;
 			productRefGroup = 725AA5BD1E05BF3A006E5DDE /* Products */;
@@ -386,7 +386,6 @@
 				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
 				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
 				7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */,
-				AA66D5561E0C77EE00D83161 /* GeneralPreferencesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +490,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				725AA5C41E05BF3A006E5DDE /* Base */,
-				AA66D5471E0C698600D83161 /* fr */,
+				AA15A2731E0E533400E5AC84 /* fr */,
+				AA15A2791E0E53CF00E5AC84 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -500,7 +500,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				72DA73611E09FE19003F9262 /* Base */,
-				AA66D5481E0C698700D83161 /* fr */,
+				AA15A2741E0E533400E5AC84 /* fr */,
+				AA15A27A1E0E53CF00E5AC84 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -508,20 +509,10 @@
 		AA66D5461E0C697E00D83161 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA66D5451E0C697E00D83161 /* en */,
-				AA66D5491E0C698700D83161 /* fr */,
+				AA15A2751E0E533F00E5AC84 /* fr */,
+				AA15A27B1E0E53D600E5AC84 /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		AA66D5581E0C77EE00D83161 /* GeneralPreferencesViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA66D5571E0C77EE00D83161 /* en */,
-				AA66D55B1E0C77F700D83161 /* fr */,
-			);
-			name = GeneralPreferencesViewController.xib;
-			path = ../../.Trash/Juice/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -630,7 +621,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 529;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
@@ -648,7 +639,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 529;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
@@ -665,7 +656,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 529;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
@@ -683,7 +674,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 529;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
