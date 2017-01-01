@@ -7,7 +7,7 @@
 //
 
 import IOKit.ps
-
+import Cocoa
 enum PowerSourceState: String {
     case unknown = "Unknown"
     case offLine = "Off Line"
@@ -17,13 +17,13 @@ enum PowerSourceState: String {
     var displayValue: String {
         switch self {
         case .unknown:
-            return "Unknown"
+            return NSLocalizedString("Unknown", comment: "Unknown")
         case .offLine:
-            return "Off Line"
+            return NSLocalizedString("Off Line", comment: "Off Line")
         case .ac:
-            return "Power Adapter"
+            return NSLocalizedString("Power Adapter", comment: "Power Adapter")
         case .battery:
-            return "Battery"
+            return NSLocalizedString("Battery", comment: "Battery")
         }
     }
 }
@@ -36,11 +36,11 @@ enum PowerSourceType: String {
     var displayValue: String {
         switch self {
         case .unknown:
-            return "Unknown"
+            return NSLocalizedString("Unknown", comment: "Unknown")
         case .battery:
-            return "Battery"
+            return NSLocalizedString("Battery", comment: "Battery")
         case .ups:
-            return "External Power"
+            return NSLocalizedString("External Power", comment: "External Power")
         }
     }
 }

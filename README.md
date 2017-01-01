@@ -1,4 +1,6 @@
 ![](/images/icon-readme.png)
+
+Thanks to brianmichel, i just translate Juice to French people contact me for bug or other translate : contact@flayor.com
 # Juice ⚡️
 Make your battery information a bit more interesting by making your own measurement scale instead of a boring battery indicator.
 

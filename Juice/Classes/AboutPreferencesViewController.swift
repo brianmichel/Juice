@@ -21,8 +21,8 @@ class AboutPreferencesViewController: NSViewController {
         let bundle = Bundle.main
         guard let version = bundle.infoDictionary?["CFBundleShortVersionString"] as? String,
             let build = bundle.infoDictionary?["CFBundleVersion"] as? String else {
-            versionLabel.stringValue = "Unknown Version"
-            buildLabel.stringValue = "Unknown Build"
+            versionLabel.stringValue = NSLocalizedString("Unknown Version", comment: "Unknown Version")
+            buildLabel.stringValue = NSLocalizedString("Unknown Build", comment: "Unknown Build")
             return
         }
         

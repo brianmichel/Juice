@@ -21,28 +21,29 @@ final class StatusMenuItem: NSMenu {
     override init(title: String) {
         super.init(title: title)
         
-        percentageItem.toolTip = "Indicates the current battery charge percentage"
+        percentageItem.toolTip = NSLocalizedString("Indicates the current battery charge percentage", comment:"Indicates the current battery charge percentage")
         
         addItem(percentageItem)
         addItem(sourceTypeItem)
         addItem(NSMenuItem.separator())
-        addItem(withTitle: "Preferences...", action: #selector(preferencesClicked), keyEquivalent: "").target = self
+        addItem(withTitle: NSLocalizedString("Preferences", comment:"Preferences"), action: #selector(preferencesClicked), keyEquivalent: "").target = self
         addItem(NSMenuItem.separator())
-        addItem(withTitle: "Quit Juice", action: #selector(quitClicked), keyEquivalent: "q").target = self
+        addItem(withTitle: NSLocalizedString("Quit Juice", comment:"Quit juice"), action: #selector(quitClicked), keyEquivalent: "q").target = self
     }
     
     required init(coder decoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder:) " + NSLocalizedString("Quit Juice", comment:"Quit juice"))
     }
     
     func update(from source: PowerSource) {
         if source.charging {
-            percentageItem.title = "\(source.chargedPercentage)% Charged"
+            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("Charged", comment:"Battery charged")
         }
         else {
-            percentageItem.title = "\(source.chargedPercentage)% Remaining"
+            percentageItem.title = "\(source.chargedPercentage)% " + NSLocalizedString("Remaining", comment:"Battery Remaining")
         }
-        sourceTypeItem.title = "Power Source: \(source.state.displayValue)"
+        sourceTypeItem.title = NSLocalizedString("Power Source", comment:"Power source")
+ + ": \(source.state.displayValue)"
     }
     
     @objc private func preferencesClicked() {

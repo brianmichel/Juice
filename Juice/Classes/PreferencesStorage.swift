@@ -54,7 +54,7 @@ final class PreferencesStorage {
                     self?.chargeDisplayScale.value = scale
                 }
             } catch (let error) {
-                print("Error scanning application support directory: \(error)")
+                print(NSLocalizedString("Error scanning application support directory", comment: "Error scanning application support directory") + ": \(error)")
             }
         }
     }
