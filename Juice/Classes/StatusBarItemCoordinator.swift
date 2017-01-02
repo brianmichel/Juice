@@ -11,6 +11,7 @@ import RxSwift
 
 final class StatusBarItemCoordinator: StatusMenuItemDelegate {
     private let preferencesCoordinator = PreferencesCoordinator()
+    private let lowPowerCoordinator: LowPowerCoordinator
     
     private let statusBarItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     private let statusBarItemMenu = StatusMenuItem(title: "Juice")
@@ -35,6 +36,8 @@ final class StatusBarItemCoordinator: StatusMenuItemDelegate {
             
             return disposable
         })
+
+        lowPowerCoordinator = LowPowerCoordinator(observable: powerSourcesObservable)
         
         scaleChangeObservable = preferencesStorage
             .chargeDisplayScale
@@ -56,6 +59,8 @@ final class StatusBarItemCoordinator: StatusMenuItemDelegate {
         scaleChangeObservable.subscribe(onNext: { (scale) in
             self.updateLabel(scale: scale)
         }).addDisposableTo(disposableBag)
+        
+        lowPowerCoordinator.start()
     }
     
     private func updateLabel(source: PowerSource) {
