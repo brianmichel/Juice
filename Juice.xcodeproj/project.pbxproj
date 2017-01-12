@@ -22,6 +22,7 @@
 		725AA5E01E05DBDB006E5DDE /* PreferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */; };
 		725AA5E51E05DE22006E5DDE /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5E31E05DE22006E5DDE /* PreferencesWindowController.swift */; };
 		725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5E41E05DE22006E5DDE /* PreferencesWindowController.xib */; };
+		728C64581E1AB52F008DA4A6 /* LowPowerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C64571E1AB52F008DA4A6 /* LowPowerCoordinator.swift */; };
 		728EB92E1E0601D800920B83 /* ChargeScaleDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB92D1E0601D800920B83 /* ChargeScaleDisplay.swift */; };
 		728EB9311E06033300920B83 /* PowerSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9301E06033300920B83 /* PowerSource+Extensions.swift */; };
 		728EB9341E0605CB00920B83 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9331E0605CB00920B83 /* FileManager+Extensions.swift */; };
@@ -73,6 +74,7 @@
 		725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesCoordinator.swift; path = Classes/PreferencesCoordinator.swift; sourceTree = "<group>"; };
 		725AA5E31E05DE22006E5DDE /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesWindowController.swift; path = Classes/PreferencesWindowController.swift; sourceTree = "<group>"; };
 		725AA5E41E05DE22006E5DDE /* PreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreferencesWindowController.xib; path = Classes/PreferencesWindowController.xib; sourceTree = "<group>"; };
+		728C64571E1AB52F008DA4A6 /* LowPowerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LowPowerCoordinator.swift; path = Classes/LowPowerCoordinator.swift; sourceTree = "<group>"; };
 		728EB92D1E0601D800920B83 /* ChargeScaleDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChargeScaleDisplay.swift; path = Classes/ChargeScaleDisplay.swift; sourceTree = "<group>"; };
 		728EB9301E06033300920B83 /* PowerSource+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PowerSource+Extensions.swift"; path = "Classes/PowerSource+Extensions.swift"; sourceTree = "<group>"; };
 		728EB9321E0604D400920B83 /* Juice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Juice.entitlements; sourceTree = "<group>"; };
@@ -160,16 +162,14 @@
 		725AA5BE1E05BF3A006E5DDE /* Juice */ = {
 			isa = PBXGroup;
 			children = (
-				728EB9321E0604D400920B83 /* Juice.entitlements */,
+				728C64591E1ABA35008DA4A6 /* Resources */,
 				728EB92F1E06032600920B83 /* Extensions */,
 				728EB92C1E0601A700920B83 /* Display String Parsing */,
+				728C64561E1AB51D008DA4A6 /* Low Power */,
 				725AA5DE1E05DBCD006E5DDE /* Preferences */,
 				725AA5D11E05C18A006E5DDE /* Main Application Hierarchy */,
 				725AA5CC1E05C083006E5DDE /* Power Source */,
 				725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */,
-				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
-				725AA5C31E05BF3A006E5DDE /* MainMenu.xib */,
-				725AA5C61E05BF3A006E5DDE /* Info.plist */,
 			);
 			path = Juice;
 			sourceTree = "<group>";
@@ -213,6 +213,26 @@
 				728EB9391E061B4700920B83 /* PreferencesStorage.swift */,
 			);
 			name = Preferences;
+			sourceTree = "<group>";
+		};
+		728C64561E1AB51D008DA4A6 /* Low Power */ = {
+			isa = PBXGroup;
+			children = (
+				728C64571E1AB52F008DA4A6 /* LowPowerCoordinator.swift */,
+			);
+			name = "Low Power";
+			sourceTree = "<group>";
+		};
+		728C64591E1ABA35008DA4A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				725AA5C61E05BF3A006E5DDE /* Info.plist */,
+				725AA5C31E05BF3A006E5DDE /* MainMenu.xib */,
+				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
+				AAA3A2A51E0F3F0F0015165E /* Localizable.strings */,
+				728EB9321E0604D400920B83 /* Juice.entitlements */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		728EB92C1E0601A700920B83 /* Display String Parsing */ = {
@@ -462,6 +482,7 @@
 				725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */,
 				725AA5D31E05C19A006E5DDE /* ApplicationCoordinator.swift in Sources */,
 				725AA5E01E05DBDB006E5DDE /* PreferencesCoordinator.swift in Sources */,
+				728C64581E1AB52F008DA4A6 /* LowPowerCoordinator.swift in Sources */,
 				725AA5E51E05DE22006E5DDE /* PreferencesWindowController.swift in Sources */,
 				728EB93A1E061B4700920B83 /* PreferencesStorage.swift in Sources */,
 				725AA5DD1E05D3CD006E5DDE /* StatusItemMenu.swift in Sources */,
@@ -510,6 +531,7 @@
 				AAA3A2A71E0F3F150015165E /* fr */,
 			);
 			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -617,7 +639,7 @@
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 529;
+				CURRENT_PROJECT_VERSION = 2017.01.02105829;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -635,7 +657,7 @@
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 529;
+				CURRENT_PROJECT_VERSION = 2017.01.02105829;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -652,7 +674,7 @@
 				CODE_SIGN_ENTITLEMENTS = JuiceHelper/JuiceHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 529;
+				CURRENT_PROJECT_VERSION = 2017.01.02105829;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -670,7 +692,7 @@
 				CODE_SIGN_ENTITLEMENTS = JuiceHelper/JuiceHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 529;
+				CURRENT_PROJECT_VERSION = 2017.01.02105829;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
