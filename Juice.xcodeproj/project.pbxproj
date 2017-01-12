@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7230D7541E05E8C70001F3E9 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */; };
-		7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */; };
 		7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */; };
 		7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */; };
 		725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */; };
@@ -37,7 +36,8 @@
 		72DA73691E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
 		72DA736A1E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
 		72DA736C1E09FF2E003F9262 /* JuiceHelper.app in Copy JuiceHelper */ = {isa = PBXBuildFile; fileRef = 72DA735A1E09FE19003F9262 /* JuiceHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AAA3A2A31E0F3F0F0015165E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAA3A2A51E0F3F0F0015165E /* Localizable.strings */; };
+		AA66C81C1E27DDD70084B909 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA66C81E1E27DDD70084B909 /* Localizable.strings */; };
+		AA6B998B1E27E238002AE3D6 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6B998D1E27E238002AE3D6 /* GeneralPreferencesViewController.xib */; };
 		BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FE5472659FE380046C1766 /* Pods_Juice.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +58,6 @@
 /* Begin PBXFileReference section */
 		3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.debug.xcconfig"; sourceTree = "<group>"; };
 		7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralPreferencesViewController.swift; path = Classes/GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
-		7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralPreferencesViewController.xib; path = Classes/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsPreferencesViewController.swift; path = Classes/CreditsPreferencesViewController.swift; sourceTree = "<group>"; };
 		7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsPreferencesViewController.xib; path = Classes/CreditsPreferencesViewController.xib; sourceTree = "<group>"; };
 		725AA5BC1E05BF3A006E5DDE /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,17 +86,20 @@
 		72DA735A1E09FE19003F9262 /* JuiceHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuiceHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DA735C1E09FE19003F9262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72DA735E1E09FE19003F9262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		72DA73611E09FE19003F9262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		72DA73631E09FE19003F9262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartOnLaunchController.swift; path = Juice/Classes/StartOnLaunchController.swift; sourceTree = "<group>"; };
 		72DA736D1E09FF45003F9262 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		72DAC54A1E0A0A050036E3BF /* JuiceHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JuiceHelper.entitlements; sourceTree = "<group>"; };
 		77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.release.xcconfig"; sourceTree = "<group>"; };
 		89FE5472659FE380046C1766 /* Pods_Juice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA66C81D1E27DDD70084B909 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AA66C81F1E27DDDB0084B909 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AA66C8211E27DF3D0084B909 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AA66C8221E27DF3E0084B909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AA6B998C1E27E238002AE3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		AA6B998E1E27E23B002AE3D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
+		AA6B998F1E27E23D002AE3D6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
 		AAA3A2A11E0F3EFF0015165E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		AAA3A2A21E0F3F000015165E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		AAA3A2A61E0F3F120015165E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AAA3A2A71E0F3F150015165E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */,
-				7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */,
+				AA6B998D1E27E238002AE3D6 /* GeneralPreferencesViewController.xib */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -140,7 +142,7 @@
 		725AA5B31E05BF3A006E5DDE = {
 			isa = PBXGroup;
 			children = (
-				AAA3A2A51E0F3F0F0015165E /* Localizable.strings */,
+				AA66C81E1E27DDD70084B909 /* Localizable.strings */,
 				72DA73671E09FEA7003F9262 /* Shared */,
 				725AA5BE1E05BF3A006E5DDE /* Juice */,
 				72DA735B1E09FE19003F9262 /* JuiceHelper */,
@@ -229,7 +231,6 @@
 				725AA5C61E05BF3A006E5DDE /* Info.plist */,
 				725AA5C31E05BF3A006E5DDE /* MainMenu.xib */,
 				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
-				AAA3A2A51E0F3F0F0015165E /* Localizable.strings */,
 				728EB9321E0604D400920B83 /* Juice.entitlements */,
 			);
 			name = Resources;
@@ -354,7 +355,7 @@
 				TargetAttributes = {
 					725AA5BB1E05BF3A006E5DDE = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YN24FFRTC8;
+						DevelopmentTeam = A925WRGBAZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -364,7 +365,7 @@
 					};
 					72DA73591E09FE19003F9262 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = YN24FFRTC8;
+						DevelopmentTeam = A925WRGBAZ;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -381,6 +382,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 725AA5B31E05BF3A006E5DDE;
 			productRefGroup = 725AA5BD1E05BF3A006E5DDE /* Products */;
@@ -398,13 +400,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */,
 				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
 				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,
-				AAA3A2A31E0F3F0F0015165E /* Localizable.strings in Resources */,
+				AA66C81C1E27DDD70084B909 /* Localizable.strings in Resources */,
 				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
 				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
 				7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */,
+				AA6B998B1E27E238002AE3D6 /* GeneralPreferencesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,20 +520,30 @@
 		72DA73601E09FE19003F9262 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				72DA73611E09FE19003F9262 /* Base */,
-				AAA3A2A21E0F3F000015165E /* fr */,
+				AA66C8211E27DF3D0084B909 /* fr */,
+				AA66C8221E27DF3E0084B909 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		AAA3A2A51E0F3F0F0015165E /* Localizable.strings */ = {
+		AA66C81E1E27DDD70084B909 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AAA3A2A61E0F3F120015165E /* en */,
-				AAA3A2A71E0F3F150015165E /* fr */,
+				AA66C81D1E27DDD70084B909 /* en */,
+				AA66C81F1E27DDDB0084B909 /* fr */,
 			);
 			name = Localizable.strings;
-			path = ..;
+			sourceTree = "<group>";
+		};
+		AA6B998D1E27E238002AE3D6 /* GeneralPreferencesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA6B998C1E27E238002AE3D6 /* Base */,
+				AA6B998E1E27E23B002AE3D6 /* en */,
+				AA6B998F1E27E23D002AE3D6 /* fr */,
+			);
+			name = GeneralPreferencesViewController.xib;
+			path = ../../juice2/Juice/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -640,7 +652,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = YN24FFRTC8;
+				DEVELOPMENT_TEAM = A925WRGBAZ;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
@@ -658,7 +670,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = YN24FFRTC8;
+				DEVELOPMENT_TEAM = A925WRGBAZ;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
@@ -675,7 +687,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = YN24FFRTC8;
+				DEVELOPMENT_TEAM = A925WRGBAZ;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
@@ -693,7 +705,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = YN24FFRTC8;
+				DEVELOPMENT_TEAM = A925WRGBAZ;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
