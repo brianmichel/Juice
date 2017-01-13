@@ -1,0 +1,36 @@
+/*
+ Localizable.strings
+ Juice
+ 
+ Created by Benjamin Noufel on 20/12/2016.
+ Contributor Zhilian DAI
+ Copyright © 2016 Brian Michel. All rights reserved.
+ */
+"Charged"="剩余电量";
+"Remaining"="剩余";
+"Power Source"="电源";
+"Quit Juice"="退出 Juice";
+"Preferences"="偏好设置...";
+"has not been implemented"="未实现";
+"About"="关于";
+"Version Information"="版本信息";
+"Power Adapter"="电源适配器";
+"Battery"="电池";
+"Unknown"="未知";
+"Off Line"="离线";
+"External Power"="外部电源";
+"General"="常规";
+"General Settings"="常规设置";
+"Credits"="开发者成员";
+"Scales Found"="Emoji电量范围";
+"Error scanning application support directory"="寻找必要文件时出现错误";
+"title"="标题";
+"default"="默认";
+"detents"="Emoji范围配置";
+"Error serializing scale"="序列化时出现错误";
+"Unknown Version"="未知版本";
+"Unknown Build"="未知版本号";
+"Credits for this app"="此应用开发者成员";
+"Indicates the current battery charge percentage"="显示当前电量百分比";
+"Low Power"="低电量";
+"Your Mac will sleep soon unless plugged into a power outlet."="请插入电源，否则电脑将很快进入休眠状态";

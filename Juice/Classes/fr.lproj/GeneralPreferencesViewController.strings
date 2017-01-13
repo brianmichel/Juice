@@ -6,7 +6,7 @@
 "1EL-UD-CHx.title" = "0 Echelle de mesure de trouvés";
 
 /* Class = "NSTextFieldCell"; title = "Launch:"; ObjectID = "3wZ-4R-SJn"; */
-"3wZ-4R-SJn.title" = "Démarrage:";
+"3wZ-4R-SJn.title" = "Démarrage: ";
 
 /* Class = "NSButtonCell"; title = "Rescan"; ObjectID = "M2Y-9t-TVn"; */
 "M2Y-9t-TVn.title" = "Rechercher";

@@ -96,10 +96,14 @@
 		AA66C8221E27DF3E0084B909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AAA3A2A11E0F3EFF0015165E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		AAD2FCF01E291E54007BD616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AAD2FCFC1E29223E007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AAD2FCFE1E292308007BD616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Classes/Base.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		AAD2FD001E292315007BD616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Classes/en.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
-		AAD2FD011E292318007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Classes/fr.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
+		AAD2FD041E293969007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAD2FD051E2939A7007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Classes/fr.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
+		AAD2FD1A1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		AAD2FD1B1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Classes/zh-Hans.lproj/GeneralPreferencesViewController.strings"; sourceTree = "<group>"; };
+		AAD2FD1C1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AAD2FD1D1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +387,7 @@
 				en,
 				Base,
 				fr,
+				"zh-Hans",
 			);
 			mainGroup = 725AA5B31E05BF3A006E5DDE;
 			productRefGroup = 725AA5BD1E05BF3A006E5DDE /* Products */;
@@ -513,6 +518,7 @@
 			children = (
 				725AA5C41E05BF3A006E5DDE /* Base */,
 				AAA3A2A11E0F3EFF0015165E /* fr */,
+				AAD2FD1A1E295A95007BD616 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -522,6 +528,7 @@
 			children = (
 				AA66C8211E27DF3D0084B909 /* fr */,
 				AA66C8221E27DF3E0084B909 /* en */,
+				AAD2FD1D1E295A95007BD616 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -530,7 +537,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				AAD2FCF01E291E54007BD616 /* en */,
-				AAD2FCFC1E29223E007BD616 /* fr */,
+				AAD2FD041E293969007BD616 /* fr */,
+				AAD2FD1C1E295A95007BD616 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -540,7 +548,8 @@
 			children = (
 				AAD2FCFE1E292308007BD616 /* Base */,
 				AAD2FD001E292315007BD616 /* en */,
-				AAD2FD011E292318007BD616 /* fr */,
+				AAD2FD051E2939A7007BD616 /* fr */,
+				AAD2FD1B1E295A95007BD616 /* zh-Hans */,
 			);
 			name = GeneralPreferencesViewController.xib;
 			sourceTree = "<group>";
