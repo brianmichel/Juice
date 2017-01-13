@@ -36,8 +36,8 @@
 		72DA73691E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
 		72DA736A1E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
 		72DA736C1E09FF2E003F9262 /* JuiceHelper.app in Copy JuiceHelper */ = {isa = PBXBuildFile; fileRef = 72DA735A1E09FE19003F9262 /* JuiceHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AA66C81C1E27DDD70084B909 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA66C81E1E27DDD70084B909 /* Localizable.strings */; };
-		AA6B998B1E27E238002AE3D6 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6B998D1E27E238002AE3D6 /* GeneralPreferencesViewController.xib */; };
+		AAD2FCEF1E291E54007BD616 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD2FCF11E291E54007BD616 /* Localizable.strings */; };
+		AAD2FCFF1E292308007BD616 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD2FCFD1E292308007BD616 /* GeneralPreferencesViewController.xib */; };
 		BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FE5472659FE380046C1766 /* Pods_Juice.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,14 +92,14 @@
 		72DAC54A1E0A0A050036E3BF /* JuiceHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JuiceHelper.entitlements; sourceTree = "<group>"; };
 		77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.release.xcconfig"; sourceTree = "<group>"; };
 		89FE5472659FE380046C1766 /* Pods_Juice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA66C81D1E27DDD70084B909 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AA66C81F1E27DDDB0084B909 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AA66C8211E27DF3D0084B909 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AA66C8221E27DF3E0084B909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		AA6B998C1E27E238002AE3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
-		AA6B998E1E27E23B002AE3D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
-		AA6B998F1E27E23D002AE3D6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
 		AAA3A2A11E0F3EFF0015165E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		AAD2FCF01E291E54007BD616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAD2FCFC1E29223E007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAD2FCFE1E292308007BD616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Classes/Base.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		AAD2FD001E292315007BD616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Classes/en.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
+		AAD2FD011E292318007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Classes/fr.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +124,8 @@
 		7230D7511E05E8A60001F3E9 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				AAD2FCFD1E292308007BD616 /* GeneralPreferencesViewController.xib */,
 				7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */,
-				AA6B998D1E27E238002AE3D6 /* GeneralPreferencesViewController.xib */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 		725AA5B31E05BF3A006E5DDE = {
 			isa = PBXGroup;
 			children = (
-				AA66C81E1E27DDD70084B909 /* Localizable.strings */,
+				AAD2FCF11E291E54007BD616 /* Localizable.strings */,
 				72DA73671E09FEA7003F9262 /* Shared */,
 				725AA5BE1E05BF3A006E5DDE /* Juice */,
 				72DA735B1E09FE19003F9262 /* JuiceHelper */,
@@ -402,11 +402,11 @@
 			files = (
 				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
 				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,
-				AA66C81C1E27DDD70084B909 /* Localizable.strings in Resources */,
 				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
+				AAD2FCEF1E291E54007BD616 /* Localizable.strings in Resources */,
 				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
 				7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */,
-				AA6B998B1E27E238002AE3D6 /* GeneralPreferencesViewController.xib in Resources */,
+				AAD2FCFF1E292308007BD616 /* GeneralPreferencesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,24 +526,23 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		AA66C81E1E27DDD70084B909 /* Localizable.strings */ = {
+		AAD2FCF11E291E54007BD616 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA66C81D1E27DDD70084B909 /* en */,
-				AA66C81F1E27DDDB0084B909 /* fr */,
+				AAD2FCF01E291E54007BD616 /* en */,
+				AAD2FCFC1E29223E007BD616 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		AA6B998D1E27E238002AE3D6 /* GeneralPreferencesViewController.xib */ = {
+		AAD2FCFD1E292308007BD616 /* GeneralPreferencesViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AA6B998C1E27E238002AE3D6 /* Base */,
-				AA6B998E1E27E23B002AE3D6 /* en */,
-				AA6B998F1E27E23D002AE3D6 /* fr */,
+				AAD2FCFE1E292308007BD616 /* Base */,
+				AAD2FD001E292315007BD616 /* en */,
+				AAD2FD011E292318007BD616 /* fr */,
 			);
 			name = GeneralPreferencesViewController.xib;
-			path = ../../juice2/Juice/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
