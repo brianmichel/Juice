@@ -359,7 +359,7 @@
 				TargetAttributes = {
 					725AA5BB1E05BF3A006E5DDE = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = A925WRGBAZ;
+						DevelopmentTeam = YN24FFRTC8;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -369,7 +369,7 @@
 					};
 					72DA73591E09FE19003F9262 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = A925WRGBAZ;
+						DevelopmentTeam = YN24FFRTC8;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -660,7 +660,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
@@ -678,7 +678,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
@@ -695,7 +695,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
@@ -713,7 +713,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2017.01.02105829;
-				DEVELOPMENT_TEAM = A925WRGBAZ;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = JuiceHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
