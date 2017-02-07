@@ -3,10 +3,10 @@
 Contributor : Zhilian DAI 
 */
 /* Class = "NSTextFieldCell"; title = "Rescan For Scales:"; ObjectID = "0hr-m8-QTZ"; */
-"0hr-m8-QTZ.title" = "重新扫描Emoji配置区间：";
+"0hr-m8-QTZ.title" = "重新加载配置文件";
 
 /* Class = "NSTextFieldCell"; title = "0 Scales Found"; ObjectID = "1EL-UD-CHx"; */
-"1EL-UD-CHx.title" = "未找到Emoji配置区间";
+"1EL-UD-CHx.title" = "未找到配置区间";
 
 /* Class = "NSTextFieldCell"; title = "Launch:"; ObjectID = "3wZ-4R-SJn"; */
 "3wZ-4R-SJn.title" = "启动：";
@@ -21,4 +21,4 @@ Contributor : Zhilian DAI
 "pSb-PT-l5y.title" = "当前区间：";
 
 /* Class = "NSButtonCell"; title = "Add Scale"; ObjectID = "xXL-NV-2xU"; */
-"xXL-NV-2xU.title" = "添加Emoji区间";
+"xXL-NV-2xU.title" = "添加配置";
