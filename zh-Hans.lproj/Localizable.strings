@@ -22,11 +22,11 @@
 "General"="常规";
 "General Settings"="常规设置";
 "Credits"="开发者成员";
-"Scales Found"="Emoji电量范围";
+"Scales Found"="电量范围";
 "Error scanning application support directory"="寻找必要文件时出现错误";
 "title"="标题";
 "default"="默认";
-"detents"="Emoji范围配置";
+"detents"="打开配置文件";
 "Error serializing scale"="序列化时出现错误";
 "Unknown Version"="未知版本";
 "Unknown Build"="未知版本号";
