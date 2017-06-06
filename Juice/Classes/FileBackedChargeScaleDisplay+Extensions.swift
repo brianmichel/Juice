@@ -37,6 +37,24 @@ extension FileBackedChargeScaleDisplay {
                                             fileName: "emoji-faces")
     }
     
+    static func makeEmojiScale() -> FileBackedChargeScaleDisplay {
+        let detents = [0: "🖕",
+                       1: "✌️",
+                       2: "👎",
+                       3: "🤞",
+                       4: "👌",
+                       5: "👍",
+                       6: "🙏",
+                       7: "👏",
+                       8: "🤙",
+                       9: "🙌"]
+        
+        return FileBackedChargeScaleDisplay(title: "Emoji Hands",
+                                            detents: detents,
+                                            defaultDetentString: "💪",
+                                            fileName: "emoji-hands")
+    }
+    
     static func makeWeirdStringScale() -> FileBackedChargeScaleDisplay {
         let detents = [0: "ded bruv",
                        1: "dyin'",
