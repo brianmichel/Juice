@@ -12,6 +12,7 @@ extension FileBackedChargeScaleDisplay {
     static func makeApplicationDefaults() -> [FileBackedChargeScaleDisplay] {
         return [
             makeEmojiScale(),
+            makeEmojiScale(),
             makeWeirdStringScale(),
             makeASCIIScale(),
             makeRomanNumeralScale(),
