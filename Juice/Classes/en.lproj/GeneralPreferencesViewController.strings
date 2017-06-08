@@ -11,8 +11,8 @@
 /* Class = "NSButtonCell"; title = "Rescan"; ObjectID = "M2Y-9t-TVn"; */
 "M2Y-9t-TVn.title" = "Rescan";
 
-/* Class = "NSButtonCell"; title = "Atomatically on system start"; ObjectID = "Q6i-XV-814"; */
-"Q6i-XV-814.title" = "Atomatically on system start";
+/* Class = "NSButtonCell"; title = "Automatically on system start"; ObjectID = "Q6i-XV-814"; */
+"Q6i-XV-814.title" = "Automatically on system start";
 
 /* Class = "NSTextFieldCell"; title = "Current Scale:"; ObjectID = "pSb-PT-l5y"; */
 "pSb-PT-l5y.title" = "Current Scale:";

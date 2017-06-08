@@ -11,7 +11,7 @@
 /* Class = "NSButtonCell"; title = "Rescan"; ObjectID = "M2Y-9t-TVn"; */
 "M2Y-9t-TVn.title" = "Rechercher";
 
-/* Class = "NSButtonCell"; title = "Atomatically on system start"; ObjectID = "Q6i-XV-814"; */
+/* Class = "NSButtonCell"; title = "Automatically on system start"; ObjectID = "Q6i-XV-814"; */
 "Q6i-XV-814.title" = "Démarrer Juice à la connexion";
 
 /* Class = "NSTextFieldCell"; title = "Current Scale:"; ObjectID = "pSb-PT-l5y"; */
