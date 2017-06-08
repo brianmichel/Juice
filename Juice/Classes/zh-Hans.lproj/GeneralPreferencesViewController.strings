@@ -14,7 +14,7 @@ Contributor : Zhilian DAI
 /* Class = "NSButtonCell"; title = "Rescan"; ObjectID = "M2Y-9t-TVn"; */
 "M2Y-9t-TVn.title" = "重新扫描";
 
-/* Class = "NSButtonCell"; title = "Atomatically on system start"; ObjectID = "Q6i-XV-814"; */
+/* Class = "NSButtonCell"; title = "Automatically on system start"; ObjectID = "Q6i-XV-814"; */
 "Q6i-XV-814.title" = "开机自启";
 
 /* Class = "NSTextFieldCell"; title = "Current Scale:"; ObjectID = "pSb-PT-l5y"; */
