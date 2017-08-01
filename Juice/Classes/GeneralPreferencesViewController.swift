@@ -9,6 +9,13 @@
 import Cocoa
 import RxSwift
 
+extension StartOnLaunchController {
+    static func juiceStartOnLaunchController() -> StartOnLaunchController {
+        return StartOnLaunchController(bundleIdentifier: "com.bsm.macos.JuiceHelper")
+    }
+}
+
+
 class GeneralPreferencesViewController: NSViewController {
     private let preferences = PreferencesStorage.shared
     
@@ -17,11 +24,13 @@ class GeneralPreferencesViewController: NSViewController {
     }()
     
     private let disposableBag = DisposeBag()
+    private let startOnLaunchController = StartOnLaunchController.juiceStartOnLaunchController()
 
     @IBOutlet weak var statusBarStylePopUp: NSPopUpButton!
     @IBOutlet weak var addNewScaleButton: NSButton!
     @IBOutlet weak var triggerRescanButton: NSButton!
     @IBOutlet weak var scalesFoundLabel: NSTextField!
+    @IBOutlet weak var launchOnLoginButton: NSButton!
     
     override var nibName: String? {
         return "GeneralPreferencesViewController"
@@ -32,6 +41,8 @@ class GeneralPreferencesViewController: NSViewController {
         
         statusBarStylePopUp.target = self
         statusBarStylePopUp.action = #selector(statusBarStyleChanged)
+        launchOnLoginButton.target = self
+        launchOnLoginButton.action = #selector(toggleStartOnLaunchButton)
         
         updatePreferencePopUp(for: preferences.scales.value)
         
@@ -43,6 +54,8 @@ class GeneralPreferencesViewController: NSViewController {
                 return
             }
         }.addDisposableTo(disposableBag)
+        
+        launchOnLoginButton.state = startOnLaunchController.startsOnLaunch ? NSOnState : NSOffState
     }
     
     @objc private func statusBarStyleChanged() {
@@ -56,7 +69,7 @@ class GeneralPreferencesViewController: NSViewController {
         
         statusBarStylePopUp.selectItem(withTitle: preferences.chargeDisplayScale.value.title)
         
-        scalesFoundLabel.stringValue = "\(scales.count) Scales Found"
+        scalesFoundLabel.stringValue = "\(scales.count) " + NSLocalizedString("Scales Found", comment: "Scales Found")
     }
     
     @IBAction func addNewScale(_ sender: Any) {
@@ -73,5 +86,11 @@ class GeneralPreferencesViewController: NSViewController {
     
     @IBAction func triggerRescan(_ sender: Any) {
         preferences.scanApplicationSupportForFiles()
+    }
+    
+    @IBAction func toggleStartOnLaunchButton(_ sender: Any) {
+        let isSet = launchOnLoginButton.state == NSOnState
+        _ = startOnLaunchController.toggle(startOnLaunch: isSet)
+
     }
 }

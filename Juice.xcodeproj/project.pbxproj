@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7230D7541E05E8C70001F3E9 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */; };
-		7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */; };
 		7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */; };
 		7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */; };
-		724E9AAB1E08B60400631881 /* Scale File Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 724E9AAA1E08B60400631881 /* Scale File Icon.icns */; };
 		725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */; };
 		725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C11E05BF3A006E5DDE /* Assets.xcassets */; };
 		725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5C31E05BF3A006E5DDE /* MainMenu.xib */; };
@@ -23,6 +21,7 @@
 		725AA5E01E05DBDB006E5DDE /* PreferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */; };
 		725AA5E51E05DE22006E5DDE /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725AA5E31E05DE22006E5DDE /* PreferencesWindowController.swift */; };
 		725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725AA5E41E05DE22006E5DDE /* PreferencesWindowController.xib */; };
+		728C64581E1AB52F008DA4A6 /* LowPowerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C64571E1AB52F008DA4A6 /* LowPowerCoordinator.swift */; };
 		728EB92E1E0601D800920B83 /* ChargeScaleDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB92D1E0601D800920B83 /* ChargeScaleDisplay.swift */; };
 		728EB9311E06033300920B83 /* PowerSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9301E06033300920B83 /* PowerSource+Extensions.swift */; };
 		728EB9341E0605CB00920B83 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9331E0605CB00920B83 /* FileManager+Extensions.swift */; };
@@ -31,16 +30,36 @@
 		728EB93A1E061B4700920B83 /* PreferencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9391E061B4700920B83 /* PreferencesStorage.swift */; };
 		728EB9431E06661800920B83 /* AboutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */; };
 		728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */; };
+		72DA735D1E09FE19003F9262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA735C1E09FE19003F9262 /* AppDelegate.swift */; };
+		72DA735F1E09FE19003F9262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DA735E1E09FE19003F9262 /* Assets.xcassets */; };
+		72DA73621E09FE19003F9262 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72DA73601E09FE19003F9262 /* MainMenu.xib */; };
+		72DA73691E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
+		72DA736A1E09FED9003F9262 /* StartOnLaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */; };
+		72DA736C1E09FF2E003F9262 /* JuiceHelper.app in Copy JuiceHelper */ = {isa = PBXBuildFile; fileRef = 72DA735A1E09FE19003F9262 /* JuiceHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AAD2FCEF1E291E54007BD616 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD2FCF11E291E54007BD616 /* Localizable.strings */; };
+		AAD2FCFF1E292308007BD616 /* GeneralPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD2FCFD1E292308007BD616 /* GeneralPreferencesViewController.xib */; };
 		BB1E603B06F7547FED9412FB /* Pods_Juice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FE5472659FE380046C1766 /* Pods_Juice.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72DA736B1E09FF0B003F9262 /* Copy JuiceHelper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				72DA736C1E09FF2E003F9262 /* JuiceHelper.app in Copy JuiceHelper */,
+			);
+			name = "Copy JuiceHelper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.debug.xcconfig"; sourceTree = "<group>"; };
 		7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneralPreferencesViewController.swift; path = Classes/GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
-		7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GeneralPreferencesViewController.xib; path = Classes/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
 		7230D7571E05F4960001F3E9 /* CreditsPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditsPreferencesViewController.swift; path = Classes/CreditsPreferencesViewController.swift; sourceTree = "<group>"; };
 		7230D7581E05F4960001F3E9 /* CreditsPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditsPreferencesViewController.xib; path = Classes/CreditsPreferencesViewController.xib; sourceTree = "<group>"; };
-		724E9AAA1E08B60400631881 /* Scale File Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Scale File Icon.icns"; sourceTree = "<group>"; };
 		725AA5BC1E05BF3A006E5DDE /* Juice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		725AA5C11E05BF3A006E5DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +73,7 @@
 		725AA5DF1E05DBDB006E5DDE /* PreferencesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesCoordinator.swift; path = Classes/PreferencesCoordinator.swift; sourceTree = "<group>"; };
 		725AA5E31E05DE22006E5DDE /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesWindowController.swift; path = Classes/PreferencesWindowController.swift; sourceTree = "<group>"; };
 		725AA5E41E05DE22006E5DDE /* PreferencesWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreferencesWindowController.xib; path = Classes/PreferencesWindowController.xib; sourceTree = "<group>"; };
+		728C64571E1AB52F008DA4A6 /* LowPowerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LowPowerCoordinator.swift; path = Classes/LowPowerCoordinator.swift; sourceTree = "<group>"; };
 		728EB92D1E0601D800920B83 /* ChargeScaleDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChargeScaleDisplay.swift; path = Classes/ChargeScaleDisplay.swift; sourceTree = "<group>"; };
 		728EB9301E06033300920B83 /* PowerSource+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PowerSource+Extensions.swift"; path = "Classes/PowerSource+Extensions.swift"; sourceTree = "<group>"; };
 		728EB9321E0604D400920B83 /* Juice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Juice.entitlements; sourceTree = "<group>"; };
@@ -63,8 +83,27 @@
 		728EB9391E061B4700920B83 /* PreferencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesStorage.swift; path = Classes/PreferencesStorage.swift; sourceTree = "<group>"; };
 		728EB9411E06661800920B83 /* AboutPreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPreferencesViewController.swift; path = Classes/AboutPreferencesViewController.swift; sourceTree = "<group>"; };
 		728EB9421E06661800920B83 /* AboutPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutPreferencesViewController.xib; path = Classes/AboutPreferencesViewController.xib; sourceTree = "<group>"; };
+		72DA735A1E09FE19003F9262 /* JuiceHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuiceHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DA735C1E09FE19003F9262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72DA735E1E09FE19003F9262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72DA73631E09FE19003F9262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartOnLaunchController.swift; path = Juice/Classes/StartOnLaunchController.swift; sourceTree = "<group>"; };
+		72DA736D1E09FF45003F9262 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		72DAC54A1E0A0A050036E3BF /* JuiceHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JuiceHelper.entitlements; sourceTree = "<group>"; };
 		77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Juice/Pods-Juice.release.xcconfig"; sourceTree = "<group>"; };
 		89FE5472659FE380046C1766 /* Pods_Juice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA66C8211E27DF3D0084B909 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AA66C8221E27DF3E0084B909 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AAA3A2A11E0F3EFF0015165E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		AAD2FCF01E291E54007BD616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAD2FCFE1E292308007BD616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Classes/Base.lproj/GeneralPreferencesViewController.xib; sourceTree = "<group>"; };
+		AAD2FD001E292315007BD616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Classes/en.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
+		AAD2FD041E293969007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAD2FD051E2939A7007BD616 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Classes/fr.lproj/GeneralPreferencesViewController.strings; sourceTree = "<group>"; };
+		AAD2FD1A1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		AAD2FD1B1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Classes/zh-Hans.lproj/GeneralPreferencesViewController.strings"; sourceTree = "<group>"; };
+		AAD2FD1C1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AAD2FD1D1E295A95007BD616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +115,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72DA73571E09FE19003F9262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7230D7511E05E8A60001F3E9 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				AAD2FCFD1E292308007BD616 /* GeneralPreferencesViewController.xib */,
 				7230D7521E05E8C70001F3E9 /* GeneralPreferencesViewController.swift */,
-				7230D7531E05E8C70001F3E9 /* GeneralPreferencesViewController.xib */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -97,28 +143,13 @@
 			name = Credits;
 			sourceTree = "<group>";
 		};
-		724E9AA81E08B5E200631881 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				724E9AA91E08B5EA00631881 /* Icons */,
-				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
-				728EB9321E0604D400920B83 /* Juice.entitlements */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		724E9AA91E08B5EA00631881 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				724E9AAA1E08B60400631881 /* Scale File Icon.icns */,
-			);
-			name = Icons;
-			sourceTree = "<group>";
-		};
 		725AA5B31E05BF3A006E5DDE = {
 			isa = PBXGroup;
 			children = (
+				AAD2FCF11E291E54007BD616 /* Localizable.strings */,
+				72DA73671E09FEA7003F9262 /* Shared */,
 				725AA5BE1E05BF3A006E5DDE /* Juice */,
+				72DA735B1E09FE19003F9262 /* JuiceHelper */,
 				725AA5BD1E05BF3A006E5DDE /* Products */,
 				A49489D7401DD5FE5654CC8B /* Pods */,
 				F424A84904A6C0FD21B47862 /* Frameworks */,
@@ -129,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				725AA5BC1E05BF3A006E5DDE /* Juice.app */,
+				72DA735A1E09FE19003F9262 /* JuiceHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,15 +168,14 @@
 		725AA5BE1E05BF3A006E5DDE /* Juice */ = {
 			isa = PBXGroup;
 			children = (
-				724E9AA81E08B5E200631881 /* Resources */,
+				728C64591E1ABA35008DA4A6 /* Resources */,
 				728EB92F1E06032600920B83 /* Extensions */,
 				728EB92C1E0601A700920B83 /* Display String Parsing */,
+				728C64561E1AB51D008DA4A6 /* Low Power */,
 				725AA5DE1E05DBCD006E5DDE /* Preferences */,
 				725AA5D11E05C18A006E5DDE /* Main Application Hierarchy */,
 				725AA5CC1E05C083006E5DDE /* Power Source */,
 				725AA5BF1E05BF3A006E5DDE /* AppDelegate.swift */,
-				725AA5C31E05BF3A006E5DDE /* MainMenu.xib */,
-				725AA5C61E05BF3A006E5DDE /* Info.plist */,
 			);
 			path = Juice;
 			sourceTree = "<group>";
@@ -190,6 +221,25 @@
 			name = Preferences;
 			sourceTree = "<group>";
 		};
+		728C64561E1AB51D008DA4A6 /* Low Power */ = {
+			isa = PBXGroup;
+			children = (
+				728C64571E1AB52F008DA4A6 /* LowPowerCoordinator.swift */,
+			);
+			name = "Low Power";
+			sourceTree = "<group>";
+		};
+		728C64591E1ABA35008DA4A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				725AA5C61E05BF3A006E5DDE /* Info.plist */,
+				725AA5C31E05BF3A006E5DDE /* MainMenu.xib */,
+				725AA5C11E05BF3A006E5DDE /* Assets.xcassets */,
+				728EB9321E0604D400920B83 /* Juice.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		728EB92C1E0601A700920B83 /* Display String Parsing */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +268,26 @@
 			name = About;
 			sourceTree = "<group>";
 		};
+		72DA735B1E09FE19003F9262 /* JuiceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				72DAC54A1E0A0A050036E3BF /* JuiceHelper.entitlements */,
+				72DA735C1E09FE19003F9262 /* AppDelegate.swift */,
+				72DA735E1E09FE19003F9262 /* Assets.xcassets */,
+				72DA73601E09FE19003F9262 /* MainMenu.xib */,
+				72DA73631E09FE19003F9262 /* Info.plist */,
+			);
+			path = JuiceHelper;
+			sourceTree = "<group>";
+		};
+		72DA73671E09FEA7003F9262 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				72DA73681E09FED9003F9262 /* StartOnLaunchController.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		A49489D7401DD5FE5654CC8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +300,7 @@
 		F424A84904A6C0FD21B47862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72DA736D1E09FF45003F9262 /* ServiceManagement.framework */,
 				89FE5472659FE380046C1766 /* Pods_Juice.framework */,
 			);
 			name = Frameworks;
@@ -248,6 +319,7 @@
 				725AA5BA1E05BF3A006E5DDE /* Resources */,
 				D2DB0B28616C3280A83203AD /* [CP] Embed Pods Frameworks */,
 				5F28ED56966804616466A5BC /* [CP] Copy Pods Resources */,
+				72DA736B1E09FF0B003F9262 /* Copy JuiceHelper */,
 			);
 			buildRules = (
 			);
@@ -258,6 +330,23 @@
 			productReference = 725AA5BC1E05BF3A006E5DDE /* Juice.app */;
 			productType = "com.apple.product-type.application";
 		};
+		72DA73591E09FE19003F9262 /* JuiceHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DA73661E09FE19003F9262 /* Build configuration list for PBXNativeTarget "JuiceHelper" */;
+			buildPhases = (
+				72DA73561E09FE19003F9262 /* Sources */,
+				72DA73571E09FE19003F9262 /* Frameworks */,
+				72DA73581E09FE19003F9262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuiceHelper;
+			productName = JuiceHelper;
+			productReference = 72DA735A1E09FE19003F9262 /* JuiceHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,10 +354,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Brian Michel";
 				TargetAttributes = {
 					725AA5BB1E05BF3A006E5DDE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YN24FFRTC8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					72DA73591E09FE19003F9262 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = YN24FFRTC8;
 						ProvisioningStyle = Automatic;
@@ -287,6 +386,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				"zh-Hans",
 			);
 			mainGroup = 725AA5B31E05BF3A006E5DDE;
 			productRefGroup = 725AA5BD1E05BF3A006E5DDE /* Products */;
@@ -294,6 +395,7 @@
 			projectRoot = "";
 			targets = (
 				725AA5BB1E05BF3A006E5DDE /* Juice */,
+				72DA73591E09FE19003F9262 /* JuiceHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -303,13 +405,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7230D7551E05E8C70001F3E9 /* GeneralPreferencesViewController.xib in Resources */,
 				725AA5E61E05DE22006E5DDE /* PreferencesWindowController.xib in Resources */,
-				724E9AAB1E08B60400631881 /* Scale File Icon.icns in Resources */,
 				725AA5C21E05BF3A006E5DDE /* Assets.xcassets in Resources */,
 				728EB9441E06661800920B83 /* AboutPreferencesViewController.xib in Resources */,
+				AAD2FCEF1E291E54007BD616 /* Localizable.strings in Resources */,
 				725AA5C51E05BF3A006E5DDE /* MainMenu.xib in Resources */,
 				7230D75A1E05F4960001F3E9 /* CreditsPreferencesViewController.xib in Resources */,
+				AAD2FCFF1E292308007BD616 /* GeneralPreferencesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DA73581E09FE19003F9262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DA735F1E09FE19003F9262 /* Assets.xcassets in Resources */,
+				72DA73621E09FE19003F9262 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,13 +489,24 @@
 				725AA5C01E05BF3A006E5DDE /* AppDelegate.swift in Sources */,
 				725AA5D31E05C19A006E5DDE /* ApplicationCoordinator.swift in Sources */,
 				725AA5E01E05DBDB006E5DDE /* PreferencesCoordinator.swift in Sources */,
+				728C64581E1AB52F008DA4A6 /* LowPowerCoordinator.swift in Sources */,
 				725AA5E51E05DE22006E5DDE /* PreferencesWindowController.swift in Sources */,
 				728EB93A1E061B4700920B83 /* PreferencesStorage.swift in Sources */,
 				725AA5DD1E05D3CD006E5DDE /* StatusItemMenu.swift in Sources */,
 				7230D7541E05E8C70001F3E9 /* GeneralPreferencesViewController.swift in Sources */,
+				72DA73691E09FED9003F9262 /* StartOnLaunchController.swift in Sources */,
 				728EB9361E060DA900920B83 /* FileBackedChargeScaleDisplay.swift in Sources */,
 				728EB9311E06033300920B83 /* PowerSource+Extensions.swift in Sources */,
 				7230D7591E05F4960001F3E9 /* CreditsPreferencesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DA73561E09FE19003F9262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DA736A1E09FED9003F9262 /* StartOnLaunchController.swift in Sources */,
+				72DA735D1E09FE19003F9262 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +517,41 @@
 			isa = PBXVariantGroup;
 			children = (
 				725AA5C41E05BF3A006E5DDE /* Base */,
+				AAA3A2A11E0F3EFF0015165E /* fr */,
+				AAD2FD1A1E295A95007BD616 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		72DA73601E09FE19003F9262 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA66C8211E27DF3D0084B909 /* fr */,
+				AA66C8221E27DF3E0084B909 /* en */,
+				AAD2FD1D1E295A95007BD616 /* zh-Hans */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AAD2FCF11E291E54007BD616 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD2FCF01E291E54007BD616 /* en */,
+				AAD2FD041E293969007BD616 /* fr */,
+				AAD2FD1C1E295A95007BD616 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AAD2FCFD1E292308007BD616 /* GeneralPreferencesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD2FCFE1E292308007BD616 /* Base */,
+				AAD2FD001E292315007BD616 /* en */,
+				AAD2FD051E2939A7007BD616 /* fr */,
+				AAD2FD1B1E295A95007BD616 /* zh-Hans */,
+			);
+			name = GeneralPreferencesViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -456,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -498,11 +655,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C77461788BEC6533AC87A19 /* Pods-Juice.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2016.12.18033401;
+				CURRENT_PROJECT_VERSION = 2017.06.08170217;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -516,16 +674,53 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77622EE75A5C033BF8EAACB4 /* Pods-Juice.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Juice/Juice.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2016.12.18033401;
+				CURRENT_PROJECT_VERSION = 2017.06.08170217;
 				DEVELOPMENT_TEAM = YN24FFRTC8;
 				INFOPLIST_FILE = Juice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.Juice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		72DA73641E09FE19003F9262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JuiceHelper/JuiceHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2017.06.08170217;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
+				INFOPLIST_FILE = JuiceHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		72DA73651E09FE19003F9262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JuiceHelper/JuiceHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2017.06.08170217;
+				DEVELOPMENT_TEAM = YN24FFRTC8;
+				INFOPLIST_FILE = JuiceHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.macos.JuiceHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -547,6 +742,15 @@
 			buildConfigurations = (
 				725AA5CA1E05BF3A006E5DDE /* Debug */,
 				725AA5CB1E05BF3A006E5DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DA73661E09FE19003F9262 /* Build configuration list for PBXNativeTarget "JuiceHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DA73641E09FE19003F9262 /* Debug */,
+				72DA73651E09FE19003F9262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

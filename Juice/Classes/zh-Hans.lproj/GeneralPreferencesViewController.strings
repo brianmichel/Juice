@@ -1,0 +1,24 @@
+
+/*
+Contributor : Zhilian DAI 
+*/
+/* Class = "NSTextFieldCell"; title = "Rescan For Scales:"; ObjectID = "0hr-m8-QTZ"; */
+"0hr-m8-QTZ.title" = "重新加载配置文件";
+
+/* Class = "NSTextFieldCell"; title = "0 Scales Found"; ObjectID = "1EL-UD-CHx"; */
+"1EL-UD-CHx.title" = "未找到配置区间";
+
+/* Class = "NSTextFieldCell"; title = "Launch:"; ObjectID = "3wZ-4R-SJn"; */
+"3wZ-4R-SJn.title" = "启动：";
+
+/* Class = "NSButtonCell"; title = "Rescan"; ObjectID = "M2Y-9t-TVn"; */
+"M2Y-9t-TVn.title" = "重新扫描";
+
+/* Class = "NSButtonCell"; title = "Automatically on system start"; ObjectID = "Q6i-XV-814"; */
+"Q6i-XV-814.title" = "开机自启";
+
+/* Class = "NSTextFieldCell"; title = "Current Scale:"; ObjectID = "pSb-PT-l5y"; */
+"pSb-PT-l5y.title" = "当前区间：";
+
+/* Class = "NSButtonCell"; title = "Add Scale"; ObjectID = "xXL-NV-2xU"; */
+"xXL-NV-2xU.title" = "添加配置";

@@ -10,6 +10,10 @@ import Foundation
 import RxSwift
 
 final class PreferencesStorage {
+    private enum Constants {
+        static let PreferredScaleKey = "PreferredScaleKey"
+    }
+
     static let shared = PreferencesStorage()
     
     private let scanQueue = OperationQueue()
@@ -26,6 +30,7 @@ final class PreferencesStorage {
     
     func set(chargeDisplayScale: ChargeScaleDisplay) {
         self.chargeDisplayScale.value = chargeDisplayScale
+        setPreferredScale(scale: chargeDisplayScale)
     }
     
     func scanApplicationSupportForFiles() {
@@ -41,9 +46,20 @@ final class PreferencesStorage {
                 localScales.append(contentsOf: FileBackedChargeScaleDisplay.makeApplicationDefaults())
                 
                 self?.scales.value = localScales
+
+                let preferredScaleTitle = UserDefaults.standard.string(forKey: Constants.PreferredScaleKey)
+
+                if let title = preferredScaleTitle,
+                    let scale = localScales.filter({ $0.title == title }).first {
+                    self?.chargeDisplayScale.value = scale
+                }
             } catch (let error) {
-                print("Error scanning application support directory: \(error)")
+                print(NSLocalizedString("Error scanning application support directory", comment: "Error scanning application support directory") + ": \(error)")
             }
         }
+    }
+
+    private func setPreferredScale(scale: ChargeScaleDisplay) {
+        UserDefaults.standard.set(scale.title, forKey: Constants.PreferredScaleKey)
     }
 }

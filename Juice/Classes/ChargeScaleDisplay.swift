@@ -6,6 +6,7 @@
 //  Copyright © 2016 Brian Michel. All rights reserved.
 //
 
+import Foundation
 import Cocoa
 
 protocol ChargeScaleDisplay {
@@ -58,7 +59,7 @@ extension SerializableChargeScaleDisplay where Self: ChargeScaleDisplay {
             
             try data.write(to: completeFilePath, options: .atomicWrite)
         } catch (let error) {
-            print("Error serializing scale: \(error)")
+            print(NSLocalizedString("Error serializing scale", comment: "Error serializing scale") + ": \(error)")
         }
     }
 }

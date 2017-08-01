@@ -12,6 +12,7 @@ extension FileBackedChargeScaleDisplay {
     static func makeApplicationDefaults() -> [FileBackedChargeScaleDisplay] {
         return [
             makeEmojiScale(),
+            makeEmojiHandsScale(),
             makeWeirdStringScale(),
             makeASCIIScale(),
             makeRomanNumeralScale(),
@@ -35,6 +36,24 @@ extension FileBackedChargeScaleDisplay {
                                             detents: detents,
                                             defaultDetentString: "😰",
                                             fileName: "emoji-faces")
+    }
+    
+    static func makeEmojiHandsScale() -> FileBackedChargeScaleDisplay {
+        let detents = [0: "🖕",
+                       1: "✌️",
+                       2: "👎",
+                       3: "🤞",
+                       4: "👌",
+                       5: "👍",
+                       6: "🙏",
+                       7: "👏",
+                       8: "🤙",
+                       9: "🙌"]
+        
+        return FileBackedChargeScaleDisplay(title: "Emoji Hands",
+                                            detents: detents,
+                                            defaultDetentString: "💪",
+                                            fileName: "emoji-hands")
     }
     
     static func makeWeirdStringScale() -> FileBackedChargeScaleDisplay {
