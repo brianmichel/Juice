@@ -14,12 +14,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        guard NSWorkspace.shared().runningApplications.filter({ $0.bundleIdentifier == "com.bsm.macos.Juice" }).count == 0 else {
+        guard NSWorkspace.shared.runningApplications.filter({ $0.bundleIdentifier == "com.bsm.macos.Juice" }).count == 0 else {
             return
         }
         
-        NSWorkspace.shared().launchApplication(withBundleIdentifier: "com.bsm.macos.Juice",
-                                               options: .async,
+        NSWorkspace.shared.launchApplication(withBundleIdentifier: "com.bsm.macos.Juice",
+                                               options: NSWorkspace.LaunchOptions.async,
                                                additionalEventParamDescriptor: nil,
                                                launchIdentifier: nil)
     }

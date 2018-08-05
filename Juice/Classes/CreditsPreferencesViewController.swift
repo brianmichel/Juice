@@ -10,8 +10,8 @@ import Cocoa
 
 class CreditsPreferencesViewController: NSViewController {
 
-    override var nibName: String? {
-        return "CreditsPreferencesViewController"
+    override var nibName: NSNib.Name? {
+        return NSNib.Name(rawValue: "CreditsPreferencesViewController")
     }
 
 }

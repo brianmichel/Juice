@@ -15,9 +15,9 @@ protocol PreferencesWindowControllerDelegate: class {
 final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
     
     enum Identifiers {
-        static let General = "Preferences-General"
-        static let Credits = "Preferences-Credits"
-        static let Tip = "Preferences-Tip"
+        static let General = NSToolbarItem.Identifier(rawValue: "Preferences-General")
+        static let Credits = NSToolbarItem.Identifier(rawValue: "Preferences-Credits")
+        static let Tip = NSToolbarItem.Identifier(rawValue: "Preferences-Tip")
     }
 
     @IBOutlet weak var toolbar: NSToolbar!
@@ -51,13 +51,13 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
         }
     }
     
-    override var windowNibName: String? {
-        return "PreferencesWindowController"
+    override var windowNibName: NSNib.Name? {
+        return NSNib.Name(rawValue: "PreferencesWindowController")
     }
     
     override func windowDidLoad() {
         super.windowDidLoad()
-        window?.level = Int(CGWindowLevelForKey(.floatingWindow))
+        window?.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.floatingWindow)))
         
         toolbar.selectedItemIdentifier = Identifiers.General
         generalToolbarItemClicked()
@@ -65,7 +65,7 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
     
     func customToolbarItem(itemForItemIdentifier itemIdentifier: String, label: String, paletteLabel: String, toolTip: String, target: AnyObject, itemContent: NSImage?, action: Selector?, menu: NSMenu?) -> NSToolbarItem? {
         
-        let toolbarItem = NSToolbarItem(itemIdentifier: itemIdentifier)
+        let toolbarItem = NSToolbarItem(itemIdentifier: NSToolbarItem.Identifier(rawValue: itemIdentifier))
         
         toolbarItem.label = label
         toolbarItem.paletteLabel = paletteLabel
@@ -84,63 +84,63 @@ final class PreferencesWindowController: NSWindowController, NSToolbarDelegate {
     
     //MARK: - NSToolbarDelegate
     
-    func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [String] {
+    func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
         return [Identifiers.General,
-                NSToolbarFlexibleSpaceItemIdentifier,
+                NSToolbarItem.Identifier.flexibleSpace,
                 Identifiers.Tip]
     }
     
-    func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [String] {
+    func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
         return [Identifiers.General,
                 Identifiers.Tip]
     }
     
-    func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: String, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
+    func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
         switch itemIdentifier {
         case Identifiers.General:
-            return customToolbarItem(itemForItemIdentifier: Identifiers.General,
+            return customToolbarItem(itemForItemIdentifier: Identifiers.General.rawValue,
                                      label: NSLocalizedString("General", comment: "General"),
                                      paletteLabel: NSLocalizedString("General", comment: "General"),
                                      toolTip: NSLocalizedString("General Settings", comment: "General Settings"),
                                      target: self,
-                                     itemContent: NSImage(named: "General Icon"),
+                                     itemContent: NSImage(named: NSImage.Name(rawValue: "General Icon")),
                                      action: #selector(generalToolbarItemClicked),
                                      menu: nil)
         case Identifiers.Credits:
-            return customToolbarItem(itemForItemIdentifier: Identifiers.Credits,
+            return customToolbarItem(itemForItemIdentifier: Identifiers.Credits.rawValue,
                                      label: NSLocalizedString("Credits", comment: "Credits"),
                                      paletteLabel: NSLocalizedString("Credits", comment: "Credits"),
                                      toolTip: NSLocalizedString("Credits for this app", comment: "Credits for this app"),
                                      target: self,
-                                     itemContent: NSImage(named: "Credits Icon"),
+                                     itemContent: NSImage(named: NSImage.Name(rawValue: "Credits Icon")),
                                      action: #selector(creditsToolbarItemClicked),
                                      menu: nil)
         case Identifiers.Tip:
-            return customToolbarItem(itemForItemIdentifier: Identifiers.Tip,
+            return customToolbarItem(itemForItemIdentifier: Identifiers.Tip.rawValue,
                                      label: NSLocalizedString("About", comment: "About"),
                                      paletteLabel: NSLocalizedString("About", comment: "About"),
                                      toolTip: NSLocalizedString("Version Information", comment: "Version Information"),
                                      target: self,
-                                     itemContent: NSImage(named: "Tip Icon"),
+                                     itemContent: NSImage(named: NSImage.Name(rawValue: "Tip Icon")),
                                      action: #selector(tipToolbarItemClicked),
                                      menu: nil)
-        case NSToolbarFlexibleSpaceItemIdentifier:
-            return NSToolbarItem(itemIdentifier: NSToolbarFlexibleSpaceItemIdentifier)
+        case NSToolbarItem.Identifier.flexibleSpace:
+            return NSToolbarItem(itemIdentifier: NSToolbarItem.Identifier.flexibleSpace)
         default:
             return nil
         }
     }
     
     @objc private func generalToolbarItemClicked() {
-        delegate?.preferences(windowController: self, clickedPreference: Identifiers.General)
+        delegate?.preferences(windowController: self, clickedPreference: Identifiers.General.rawValue)
     }
     
     @objc private func creditsToolbarItemClicked() {
-        delegate?.preferences(windowController: self, clickedPreference: Identifiers.Credits)
+        delegate?.preferences(windowController: self, clickedPreference: Identifiers.Credits.rawValue)
     }
     
     @objc private func tipToolbarItemClicked() {
-        delegate?.preferences(windowController: self, clickedPreference: Identifiers.Tip)
+        delegate?.preferences(windowController: self, clickedPreference: Identifiers.Tip.rawValue)
     }
     
 }

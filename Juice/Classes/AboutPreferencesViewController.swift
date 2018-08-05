@@ -12,8 +12,8 @@ class AboutPreferencesViewController: NSViewController {
     @IBOutlet weak var versionLabel: NSTextField!
     @IBOutlet weak var buildLabel: NSTextField!
     
-    override var nibName: String? {
-        return "AboutPreferencesViewController"
+    override var nibName: NSNib.Name? {
+        return NSNib.Name(rawValue: "AboutPreferencesViewController")
     }
     
     override func viewDidLoad() {

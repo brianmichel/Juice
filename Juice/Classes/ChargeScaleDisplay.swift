@@ -50,7 +50,7 @@ extension SerializableChargeScaleDisplay where Self: ChargeScaleDisplay {
         let completeFilePath = applicationSupportDirectory.appendingPathComponent(fileName)
         
         do {
-            let data = try PropertyListSerialization.data(fromPropertyList: plistValues, format: .xml, options: .allZeros)
+            let data = try PropertyListSerialization.data(fromPropertyList: plistValues, format: .xml, options: 0)
             try data.write(to: completeFilePath, options: .atomicWrite)
         } catch (let error) {
             print(NSLocalizedString("Error serializing scale", comment: "Error serializing scale") + ": \(error)")

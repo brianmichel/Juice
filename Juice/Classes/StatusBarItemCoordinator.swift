@@ -13,7 +13,7 @@ final class StatusBarItemCoordinator: StatusMenuItemDelegate {
     private let preferencesCoordinator = PreferencesCoordinator()
     private let lowPowerCoordinator: LowPowerCoordinator
     
-    private let statusBarItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    private let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private let statusBarItemMenu = StatusMenuItem(title: "Juice")
     private let disposableBag = DisposeBag()
     private let powerSourcesObservable: Observable<[PowerSource]>
@@ -54,11 +54,11 @@ final class StatusBarItemCoordinator: StatusMenuItemDelegate {
             }
             
             self.updateLabel(source: source)
-        }).addDisposableTo(disposableBag)
+        }).disposed(by: disposableBag)
         
         scaleChangeObservable.subscribe(onNext: { (scale) in
             self.updateLabel(scale: scale)
-        }).addDisposableTo(disposableBag)
+        }).disposed(by: disposableBag)
         
         lowPowerCoordinator.start()
     }

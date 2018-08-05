@@ -23,13 +23,13 @@ final class PreferencesCoordinator: PreferencesWindowControllerDelegate {
     func preferences(windowController: PreferencesWindowController, clickedPreference identifier: String) {
         switch identifier {
             
-        case PreferencesWindowController.Identifiers.General:
+        case PreferencesWindowController.Identifiers.General.rawValue:
             windowController.contentViewController = GeneralPreferencesViewController()
             windowController.window?.title = NSLocalizedString("General", comment: "General")
-        case PreferencesWindowController.Identifiers.Credits:
+        case PreferencesWindowController.Identifiers.Credits.rawValue:
             windowController.contentViewController = CreditsPreferencesViewController()
             windowController.window?.title = NSLocalizedString("Credits", comment: "Credits")
-        case PreferencesWindowController.Identifiers.Tip:
+        case PreferencesWindowController.Identifiers.Tip.rawValue:
             windowController.contentViewController = AboutPreferencesViewController()
             windowController.window?.title = NSLocalizedString("About", comment: "About")
         default:

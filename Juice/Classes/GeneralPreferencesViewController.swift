@@ -32,8 +32,8 @@ class GeneralPreferencesViewController: NSViewController {
     @IBOutlet weak var scalesFoundLabel: NSTextField!
     @IBOutlet weak var launchOnLoginButton: NSButton!
     
-    override var nibName: String? {
-        return "GeneralPreferencesViewController"
+    override var nibName: NSNib.Name? {
+        return NSNib.Name(rawValue: "GeneralPreferencesViewController")
     }
     
     override func viewDidLoad() {
@@ -53,9 +53,9 @@ class GeneralPreferencesViewController: NSViewController {
             default:
                 return
             }
-        }.addDisposableTo(disposableBag)
+        }.disposed(by: disposableBag)
         
-        launchOnLoginButton.state = startOnLaunchController.startsOnLaunch ? NSOnState : NSOffState
+        launchOnLoginButton.state = startOnLaunchController.startsOnLaunch ? NSControl.StateValue.on : NSControl.StateValue.off
     }
     
     @objc private func statusBarStyleChanged() {
@@ -81,7 +81,7 @@ class GeneralPreferencesViewController: NSViewController {
         
         newScale.save()
         
-        NSWorkspace.shared().open(filePath)
+        NSWorkspace.shared.open(filePath)
     }
     
     @IBAction func triggerRescan(_ sender: Any) {
@@ -89,7 +89,7 @@ class GeneralPreferencesViewController: NSViewController {
     }
     
     @IBAction func toggleStartOnLaunchButton(_ sender: Any) {
-        let isSet = launchOnLoginButton.state == NSOnState
+        let isSet = launchOnLoginButton.state == NSControl.StateValue.on
         _ = startOnLaunchController.toggle(startOnLaunch: isSet)
 
     }
