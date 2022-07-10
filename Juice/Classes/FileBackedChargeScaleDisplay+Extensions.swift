@@ -16,6 +16,7 @@ extension FileBackedChargeScaleDisplay {
             makeWeirdStringScale(),
             makeASCIIScale(),
             makeRomanNumeralScale(),
+            makeKittiesScale(),
             makeHorizontalLineScale()
         ]
     }
@@ -127,6 +128,25 @@ extension FileBackedChargeScaleDisplay {
                                             defaultDetentString: "┅┅┅┅┅┅┅┅┅┅┅",
                                             fileName: "dotted-line")
     }
+
+    static func makeKittiesScale(id: String) -> FileBackedChargeScaleDisplay {
+        let detents = [0: "🙀",
+                       1: "🙀",
+                       2: "😿",
+                       3: "😿",
+                       4: "😺",
+                       5: "😺",
+                       6: "😸",
+                       7: "😸",
+                       8: "😻",
+                       9: "😻"]
+
+        return FileBackedChargeScaleDisplay(title: "Kitties",
+                                            detents: detents,
+                                            defaultDetentString: "😽",
+                                            fileName: "kitties")
+    }
+
     static func makeNewScaleTemplateScale(id: String) -> FileBackedChargeScaleDisplay {
         let detents = [0: "Edit Me, I'll be triggered from 0 to 10%",
                        1: "Edit Me, I'll be triggered from 10 to 20%",
